@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Maven: org.unitils:unitils-dbunit:4.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/unitils/unitils-dbunit/4.0-SNAPSHOT/unitils-dbunit-4.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/unitils/unitils-dbunit/4.0-SNAPSHOT/unitils-dbunit-4.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/unitils/unitils-dbunit/4.0-SNAPSHOT/unitils-dbunit-4.0-SNAPSHOT-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../unitils/src/tools/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/src/integrationtest/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-io/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-mock/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-test/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-test/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-dbunit/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-inject/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-database/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../unitils/unitils-easymock/src/main/java" />
+    </SOURCES>
+  </library>
+</component>

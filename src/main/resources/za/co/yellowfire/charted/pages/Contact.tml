@@ -1,0 +1,13 @@
+<html t:type="layout" title="Contact za.co.yellowfire.tapestry"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <t:grid source="users" row="user" rowsPerPage="5">
+        <p:nameCell>
+            <t:pagelink page="user/view" context="user.name">${user.name}</t:pagelink>
+        </p:nameCell>
+        <p:empty>
+            <p>There are no users to display; you can <t:pagelink page="adduser">add some</t:pagelink>.</p>
+        </p:empty>
+    </t:grid>
+</html>

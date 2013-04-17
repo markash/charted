@@ -1,0 +1,6 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+<body>
+    <h1>View User</h1>
+        <t:beandisplay object="section"/>
+    </body>
+</html>
