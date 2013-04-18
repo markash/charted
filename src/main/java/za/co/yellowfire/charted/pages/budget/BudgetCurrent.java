@@ -1,9 +1,11 @@
 package za.co.yellowfire.charted.pages.budget;
 
 import org.apache.tapestry5.EventContext;
+import org.apache.tapestry5.PersistenceConstants;
 import org.apache.tapestry5.ValueEncoder;
 import org.apache.tapestry5.annotations.Import;
 import org.apache.tapestry5.annotations.InjectPage;
+import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.beaneditor.BeanModel;
 import org.apache.tapestry5.ioc.Messages;
@@ -14,16 +16,14 @@ import za.co.yellowfire.charted.database.DataAccessException;
 import za.co.yellowfire.charted.domain.*;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author Mark P Ashworth
  * @version 0.1.0
  */
 @Import(library={"context:js/bootstrap.js"})
-public class BudgetCurrent extends AbstractBudgetPage {
+public class BudgetCurrent {
 
     @Inject
     private BudgetDao budgetDao;
@@ -31,6 +31,7 @@ public class BudgetCurrent extends AbstractBudgetPage {
     @Inject
     private BudgetCategoryDao categoryDao;
 
+    @Persist(PersistenceConstants.FLASH)
     private Budget budget;
 
     @Property
@@ -65,6 +66,9 @@ public class BudgetCurrent extends AbstractBudgetPage {
 
     @InjectPage
     private BudgetCurrent onSuccessPage;
+
+    @InjectPage
+    private Category categoryPage;
 
     public Map<String, String> getChildren() {
         Map<String, String> params = new HashMap<String, String>();
@@ -146,6 +150,22 @@ public class BudgetCurrent extends AbstractBudgetPage {
     }
 
     public void onRefresh() {}
+
+    public Object onActionFromAddCategory(long budgetId) {
+        categoryPage.setBudgetId(budgetId);
+        return categoryPage;
+    }
+
+    public List<MenuSection> getMenuSections() {
+        return Arrays.asList(
+                new MenuSection(
+                        "Budgeting",
+                        new MenuItem[]{
+                                new MenuItem("Current Budget", "budget/current"),
+                                new MenuItem("Statement Upload", "statement/upload"),
+                        })
+        );
+    }
 
     private class BudgetCategoryEncoder implements ValueEncoder<BudgetCategory> {
         /**

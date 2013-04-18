@@ -3,6 +3,7 @@ package za.co.yellowfire.charted.pages.budget;
 import org.apache.tapestry5.Translator;
 import org.apache.tapestry5.annotations.Component;
 import org.apache.tapestry5.annotations.InjectComponent;
+import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.corelib.components.Form;
 import org.apache.tapestry5.corelib.components.TextField;
@@ -18,6 +19,9 @@ import java.util.List;
  * @version 0.1.0
  */
 public class Category {
+    @Persist
+    private long budgetId;
+
     @Inject
     private BudgetDao budgetDao;
 
@@ -36,6 +40,20 @@ public class Category {
     @InjectComponent("name")
     private TextField nameField;
 
+
+    public void setBudgetId(long budgetId) {
+        System.out.println("budgetId = " + budgetId);
+    }
+
+    public void onValidateFromCategoryForm() {
+        System.out.println("onValidate");
+    }
+
+    public Object onSuccess() {
+        System.out.println("onSuccess");
+        return BudgetCurrent.class;
+    }
+
     public List<MenuSection> getMenuSections() {
         return Arrays.asList(
                 new MenuSection(
@@ -45,13 +63,5 @@ public class Category {
                                 new MenuItem("Statement Upload", "statement/upload"),
                         })
         );
-    }
-
-    public void onValidateFromCategoryForm() {
-    }
-
-    public Object onSuccess() {
-        System.out.println("onSuccess");
-        return BudgetCurrent.class;
     }
 }

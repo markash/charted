@@ -8,7 +8,6 @@ import org.apache.tapestry5.upload.services.UploadedFile;
 import za.co.yellowfire.charted.domain.MenuItem;
 import za.co.yellowfire.charted.domain.MenuSection;
 import za.co.yellowfire.charted.domain.Statement;
-import za.co.yellowfire.charted.pages.budget.AbstractBudgetPage;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -19,7 +18,7 @@ import java.util.List;
  * @author Mark P Ashworth
  * @version 0.1.0
  */
-public class StatementUpload extends AbstractBudgetPage {
+public class StatementUpload {
     @Property
     private UploadedFile file;
 
@@ -41,14 +40,14 @@ public class StatementUpload extends AbstractBudgetPage {
         message = "Uploaded " + file.getFileName() + " successfully";
     }
 
-//    public List<MenuSection> getMenuSections() {
-//        return Arrays.asList(
-//                new MenuSection(
-//                        "Budgeting",
-//                        new MenuItem[]{
-//                                new MenuItem("Current Budget", "budget/current"),
-//                                new MenuItem("Statement Upload", "statement/upload"),
-//                        })
-//        );
-//    }
+    public List<MenuSection> getMenuSections() {
+        return Arrays.asList(
+                new MenuSection(
+                        "Budgeting",
+                        new MenuItem[]{
+                                new MenuItem("Current Budget", "budget/current"),
+                                new MenuItem("Statement Upload", "statement/upload"),
+                        })
+        );
+    }
 }

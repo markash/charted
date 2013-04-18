@@ -5,15 +5,16 @@ import org.apache.tapestry5.MarkupWriter;
 import org.apache.tapestry5.ValidationException;
 import org.apache.tapestry5.services.FormSupport;
 import za.co.yellowfire.charted.domain.CashFlowDirection;
+import za.co.yellowfire.charted.domain.Color;
 
 /**
  * @author Mark P Ashworth
  * @version 0.1.0
  */
-public class ColorTranslator extends AbstractTranslator<CashFlowDirection> {
+public class ColorTranslator extends AbstractTranslator<Color> {
 
     public ColorTranslator() {
-        super("cash-flow-direction", CashFlowDirection.class, "cash-flow-direction-as-a-string");
+        super("color", Color.class, "color-as-a-string");
     }
 
 
@@ -26,7 +27,7 @@ public class ColorTranslator extends AbstractTranslator<CashFlowDirection> {
      * @return client-side value to present to the user
      */
     @Override
-    public String toClient(CashFlowDirection value) {
+    public String toClient(Color value) {
         return value.name();
     }
 
@@ -41,8 +42,8 @@ public class ColorTranslator extends AbstractTranslator<CashFlowDirection> {
      *          if the value can not be parsed
      */
     @Override
-    public CashFlowDirection parseClient(Field field, String clientValue, String message) throws ValidationException {
-        return CashFlowDirection.valueOf(clientValue);
+    public Color parseClient(Field field, String clientValue, String message) throws ValidationException {
+        return Color.valueOf(clientValue);
     }
 
     /**

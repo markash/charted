@@ -29,6 +29,6 @@
         <t:menu sections="menuSections" />
     </p:menu>
     <p:sidebar>
-
+        <a t:type="actionlink" t:id="addCategory" context="budget.id">Add budget category</a>
     </p:sidebar>
 </html>

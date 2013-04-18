@@ -56,15 +56,12 @@
                                 </div>
                             </div>
                         </div><!--/span-->
-                        <div class="span3">
+                        <div class="span3" t:type="if" test="sidebar">
                             <t:alerts/>
-                            <li t:type="if" test="sidebar">
-                                <h2>${sidebarTitle}</h2>
-
-                                <div class="sidebar-content">
-                                    <t:delegate to="sidebar"/>
-                                </div>
-                            </li>
+                            <h2>${sidebarTitle}</h2>
+                            <div class="sidebar-content">
+                                <t:delegate to="sidebar"/>
+                            </div>
                         </div><!--/span-->
                     </div> <!--row-->
 
