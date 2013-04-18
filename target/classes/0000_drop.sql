@@ -1,0 +1,9 @@
+drop table if exists budget_allocation;
+drop table if exists transaction;
+drop table if exists budget_category;
+drop table if exists budget_section;
+drop table if exists budget;
+drop table if exists account;
+drop table if exists credential;
+drop table if exists objective;
+drop sequence if exists seq_identity;

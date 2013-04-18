@@ -1,0 +1,7 @@
+<t:container xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd">
+    <li t:type="loop" source="sections" value="section" class="nav-header" >
+        <li t:type="loop" source="section.items" value="item" class="prop:classForPageName">
+            <t:pagelink page="prop:item.url">${item.name}</t:pagelink>
+        </li>
+    </li>
+</t:container>
