@@ -1,0 +1,9 @@
+<html t:type="layout"
+      title="Add section"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
+<body>
+    <h1>View User</h1>
+        <t:text value="section" />
+        <t:beandisplay object="section"/>
+    </body>
+</html>
