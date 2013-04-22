@@ -70,6 +70,10 @@ public class BudgetSection implements Serializable, Comparable<BudgetSection> {
 
     public BudgetSection() { }
 
+    public BudgetSection(Long id) {
+        this.id = id;
+    }
+
     public BudgetSection(String name, CashFlowDirection direction, String color) {
         this.name = name;
         this.direction = direction;

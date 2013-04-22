@@ -13,12 +13,12 @@ import java.sql.SQLException;
 public class BudgetCategoryMapper implements ResultSetMapper<BudgetCategory> {
     public BudgetCategory map(int index, ResultSet r, StatementContext ctx) throws SQLException {
         return new BudgetCategory(
-                r.getLong(BudgetCategoryQuery.section_id),
+                r.getLong(BudgetCategoryQuery.category_id),
                 r.getString(BudgetCategoryQuery.name),
                 CashFlowDirection.valueOf(r.getString(BudgetCategoryQuery.direction)),
                 Color.valueOf(r.getString(BudgetCategoryQuery.color)),
                 r.getBigDecimal(BudgetCategoryQuery.budget_amount),
-                null,
+                new BudgetSection(r.getLong(BudgetCategoryQuery.section_id)),
                 r.getString(BudgetCategoryQuery.matches)
                 );
     }

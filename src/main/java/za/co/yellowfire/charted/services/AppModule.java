@@ -19,6 +19,9 @@ import org.skife.jdbi.v2.Handle;
 import org.slf4j.Logger;
 import za.co.yellowfire.charted.domain.BudgetCategoryDao;
 import za.co.yellowfire.charted.domain.BudgetDao;
+import za.co.yellowfire.charted.domain.BudgetSection;
+import za.co.yellowfire.charted.domain.BudgetSectionDao;
+import za.co.yellowfire.charted.translator.BudgetSectionValueEncoder;
 import za.co.yellowfire.charted.translator.CashFlowDirectionTranslator;
 import za.co.yellowfire.charted.translator.ColorTranslator;
 
@@ -34,12 +37,22 @@ public class AppModule {
                 return new BudgetDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
             }
         });
+        binder.bind(BudgetSectionDao.class, new ServiceBuilder<BudgetSectionDao>() {
+            @Override
+            public BudgetSectionDao buildService(ServiceResources serviceResources) {
+                return new BudgetSectionDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
+            }
+        });
         binder.bind(BudgetCategoryDao.class, new ServiceBuilder<BudgetCategoryDao>() {
             @Override
             public BudgetCategoryDao buildService(ServiceResources serviceResources) {
                 return new BudgetCategoryDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
             }
         });
+    }
+
+    public static void contributeValueEncoderSource(MappedConfiguration<Class,Object> configuration) {
+        configuration.addInstance(BudgetSection.class, BudgetSectionValueEncoder.class);
     }
 
     public static void contributeFactoryDefaults(

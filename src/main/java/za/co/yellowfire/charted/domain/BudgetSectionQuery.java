@@ -27,7 +27,7 @@ public interface BudgetSectionQuery {
             budget_id + "," + name + "," + color + "," + direction +
             ") values (" +
             ":" + budget_id + ",:" + name + ",:" + color + ",:" + direction + ")")
-    void insert(@BindBean BudgetSection budgetSection);
+    void insert(@Bind(budget_id) long budgetId, @BindBudgetSection BudgetSection budgetSection);
 
     @SqlQuery("select " + fields + " from " + table + " where " + section_id + " = :" + section_id)
     @Mapper(BudgetSectionMapper.class)

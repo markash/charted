@@ -58,6 +58,5 @@ public class ColorTranslator extends AbstractTranslator<Color> {
      */
     @Override
     public void render(Field field, String message, MarkupWriter writer, FormSupport formSupport) {
-
     }
 }

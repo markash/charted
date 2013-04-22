@@ -70,6 +70,9 @@ public class BudgetCurrent {
     @InjectPage
     private Category categoryPage;
 
+    @InjectPage
+    private Section sectionPage;
+
     public Map<String, String> getChildren() {
         Map<String, String> params = new HashMap<String, String>();
         params.put("type", "expense");
@@ -154,6 +157,11 @@ public class BudgetCurrent {
     public Object onActionFromAddCategory(long budgetId) {
         categoryPage.setBudgetId(budgetId);
         return categoryPage;
+    }
+
+    public Object onActionFromAddSection(long budgetId) {
+        sectionPage.setBudgetId(budgetId);
+        return sectionPage;
     }
 
     public List<MenuSection> getMenuSections() {

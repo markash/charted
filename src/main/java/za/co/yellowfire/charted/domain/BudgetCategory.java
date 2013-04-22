@@ -77,6 +77,10 @@ public class BudgetCategory implements Serializable, Comparable<BudgetCategory> 
     @Column(name = "matches", length = 2048)
     private String matches;
 
+    private Date created;
+
+    private Date updated;
+
     public BudgetCategory() { }
 
     public BudgetCategory(Long id) {
@@ -135,6 +139,7 @@ public class BudgetCategory implements Serializable, Comparable<BudgetCategory> 
         return id;
     }
 
+
     public String getName() {
         return name;
     }
@@ -177,6 +182,10 @@ public class BudgetCategory implements Serializable, Comparable<BudgetCategory> 
         } else {
             return (actualAmount != null ? actualAmount.subtract((budgetAmount != null ? budgetAmount : ZERO)) : ZERO);
         }
+    }
+
+    public String getMatchesValue() {
+        return this.matches;
     }
 
     public List<String> getMatches() {

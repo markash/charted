@@ -1,12 +1,12 @@
 package za.co.yellowfire.charted.domain.jdbi;
 
-import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 import org.skife.jdbi.v2.StatementContext;
 import org.skife.jdbi.v2.tweak.Argument;
 
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.sql.Types;
 
 /**
@@ -14,10 +14,10 @@ import java.sql.Types;
  * @version 0.1.0
  */
 public class LocalDateArgument implements Argument {
-    private final DateTime dateTime;
+    private final LocalDate date;
 
-    public LocalDateArgument(DateTime dateTime) {
-        this.dateTime = dateTime;
+    public LocalDateArgument(LocalDate date) {
+        this.date = date;
     }
 
     /**
@@ -31,15 +31,15 @@ public class LocalDateArgument implements Argument {
      */
     @Override
     public void apply(int position, PreparedStatement statement, StatementContext ctx) throws SQLException {
-        if (dateTime == null) {
-            statement.setNull(position, Types.TIMESTAMP);
+        if (date == null) {
+            statement.setNull(position, Types.DATE);
         } else {
-            statement.setTimestamp(position, new Timestamp(dateTime.getMillis()));
+            statement.setDate(position, new Date(date.toDate().getTime()));
         }
     }
 
     @Override
     public String toString() {
-        return String.valueOf(dateTime);
+        return String.valueOf(date);
     }
 }

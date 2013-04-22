@@ -15,11 +15,15 @@ public @interface BindBudgetCategory {
     public static class BudgetBinderFactory implements BinderFactory {
 
         public Binder build(Annotation annotation) {
-          return new Binder<BindBudgetCategory, Budget>() {
-            public void bind(SQLStatement q, BindBudgetCategory bind, Budget budget) {
-                q.bind(BudgetQuery.start_date, budget.getStartDate());
-                q.bind(BudgetQuery.end_date, budget.getEndDate());
-                q.bind(BudgetQuery.objective_id, budget.getObjective().getId());
+          return new Binder<BindBudgetCategory, BudgetCategory>() {
+            public void bind(SQLStatement q, BindBudgetCategory bind, BudgetCategory category) {
+                q.bind(BudgetCategoryQuery.category_id, category.getId());
+                q.bind(BudgetCategoryQuery.section_id, category.getSection().getId());
+                q.bind(BudgetCategoryQuery.name, category.getName());
+                q.bind(BudgetCategoryQuery.color, category.getColor());
+                q.bind(BudgetCategoryQuery.direction, category.getDirection().name());
+                q.bind(BudgetCategoryQuery.matches, category.getMatchesValue());
+                q.bind(BudgetCategoryQuery.budget_amount, category.getBudgetAmount());
             }
           };
         }

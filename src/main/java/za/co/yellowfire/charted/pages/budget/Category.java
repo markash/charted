@@ -1,14 +1,13 @@
 package za.co.yellowfire.charted.pages.budget;
 
-import org.apache.tapestry5.Translator;
-import org.apache.tapestry5.annotations.Component;
+import org.apache.tapestry5.EventContext;
 import org.apache.tapestry5.annotations.InjectComponent;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
-import org.apache.tapestry5.corelib.components.Form;
 import org.apache.tapestry5.corelib.components.TextField;
 import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
+import za.co.yellowfire.charted.database.DataAccessException;
 import za.co.yellowfire.charted.domain.*;
 
 import java.util.Arrays;
@@ -23,34 +22,49 @@ public class Category {
     private long budgetId;
 
     @Inject
-    private BudgetDao budgetDao;
+    private BudgetSectionDao sectionDao;
+
+    @Inject
+    private BudgetCategoryDao categoryDao;
 
     @Inject
     private Messages messages;
 
-
     @Property
     private String name;
+
     @Property()
     private CashFlowDirection direction = CashFlowDirection.EXPENSE;
 
     @Property
     private Color color = Color.medium_faded_red;
 
+    @Property
+    private BudgetSection section;
+
+    @Property
+    private List<BudgetSection> sections;
+
     @InjectComponent("name")
     private TextField nameField;
 
-
     public void setBudgetId(long budgetId) {
-        System.out.println("budgetId = " + budgetId);
+        this.budgetId = budgetId;
+    }
+
+    public void onActivate(EventContext eventContext) throws DataAccessException {
+        sections = sectionDao.findForBudgetId(budgetId);
     }
 
     public void onValidateFromCategoryForm() {
         System.out.println("onValidate");
     }
 
-    public Object onSuccess() {
-        System.out.println("onSuccess");
+    public Object onSuccess() throws DataException {
+
+        BudgetCategory category = new BudgetCategory(name, direction, color, section);
+        categoryDao.save(category);
+
         return BudgetCurrent.class;
     }
 

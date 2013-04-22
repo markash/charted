@@ -1,9 +1,29 @@
 <html t:type="layout"
       title="Add section"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd">
-<body>
-    <h1>View User</h1>
-        <t:text value="section" />
-        <t:beandisplay object="section"/>
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+      xmlns:p="tapestry:parameter">
+    <body>
+    <t:form t:id="sectionForm" >
+        <t:errors/>
+
+        <t:label for="name"/>
+        <input t:type="TextField" t:id="name" t:validate="required,minlength=3" size="30"/>
+        <br/>
+        <t:label for="direction"/>
+        <input t:type="Select" t:id="direction" t:translate="cash-flow-direction" t:validate="required"/>
+        <br/>
+        <t:label for="color"/>
+        <input t:type="Select" t:id="color" t:translate="color" t:validate="required"/>
+        <br/>
+
+        <button t:type="submit" value="Save" />
+        <a t:type="eventlink" t:event="refresh" href="#" style="margin-left: 5px;">Refresh</a>
+    </t:form>
     </body>
+    <p:menu>
+        <t:menu sections="menuSections" />
+    </p:menu>
+    <p:sidebar>
+
+    </p:sidebar>
 </html>

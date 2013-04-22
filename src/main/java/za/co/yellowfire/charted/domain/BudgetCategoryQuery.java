@@ -28,8 +28,22 @@ public interface BudgetCategoryQuery {
     @SqlUpdate("insert into " + table + "(" +
             section_id + "," + name + "," + color + "," + direction + "," + matches + "," + budget_amount +
             ") values (" +
-            ":" + section_id + ",:" + name + ",:" + color + ",:" + direction + ",:" + matches + ",:" + budget_amount + ")")
-    void insert(@BindBean BudgetCategory budgetCategory);
+            ":" + section_id + ",:" + name + ",:" + color + ",:" + direction + ",:" + matches + ",:" + budget_amount + ")" +
+            " returning " + category_id)
+    Integer insert(@BindBudgetCategory BudgetCategory budgetCategory);
+
+    @SqlUpdate("update " + table +
+            "set " + section_id + " = :" + section_id + "," +
+            name + " = :" + section_id + "," +
+            color + " = :" + section_id + "," +
+            direction + " = :" + section_id + "," +
+            matches + " = :" + section_id + "," +
+            budget_amount + " = :" + section_id + "," +
+            " update_ts = now() " +
+            " where " + category_id + " = :" + category_id +
+            " returning " + fields)
+    @Mapper(BudgetCategoryMapper.class)
+    BudgetCategory update(@BindBudgetCategory BudgetCategory budgetCategory);
 
     @SqlQuery("select " + fields + " from " + table + " where " + category_id + " = :" + category_id)
     @Mapper(BudgetCategoryMapper.class)
