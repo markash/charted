@@ -18,7 +18,7 @@
                     <input t:id="budgetAmount" t:type="TextField" t:value="budgetCategory.budgetAmount" t:validate="required, maxlength=10" size="10"/>
                 </p:budgetAmountCell>
                 <p:empty>
-                    <p>There are no budget categories to display; you can <t:pagelink page="adduser">add some</t:pagelink>.</p>
+                    <p>There are no budget categories to display; you can <t:pagelink page="budget/category">add some</t:pagelink>.</p>
                 </p:empty>
             </t:grid>
             <button t:type="submit" value="Save" />
@@ -29,7 +29,7 @@
         <t:menu sections="menuSections" />
     </p:menu>
     <p:sidebar>
-        <a t:type="actionlink" t:id="addSection" context="budget.id">Add budget section</a><br />
-        <a t:type="actionlink" t:id="addCategory" context="budget.id">Add budget category</a>
+        <a t:type="actionlink" t:id="addSection" context="budget.id">Add section</a><br />
+        <a t:type="actionlink" t:id="addCategory" context="budget.id">Add category</a>
     </p:sidebar>
 </html>

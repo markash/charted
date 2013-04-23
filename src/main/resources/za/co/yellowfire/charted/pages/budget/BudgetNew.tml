@@ -1,0 +1,14 @@
+<html t:type="layout"
+      title="New Budget"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+    <body>
+    <t:form t:id="budgetForm" >
+        <t:errors/>
+
+        <t:label for="startDate"/>
+        <input t:type="DatePicker" t:id="startDate" t:format="yyyy-mm-dd" t:validate="required,minlength=3" size="30"/>
+        <br/>
+    </t:form>
+    </body>
+</html>
