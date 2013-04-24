@@ -6,17 +6,18 @@
     <t:form t:id="budgetForm" >
         <t:errors/>
         <t:label for="name"/>
-        <input t:type="TextField" t:id="name" size="30" t:disabled="true"/>
+        <input t:type="TextField" t:id="name" size="30"/>
         <br/>
         <div id="startDateControl" class="control-group">
             <t:label for="startDate"/>
-            <input t:type="DatePicker" t:id="startDate" t:format="yyyy-mm-dd" t:validate="required" size="30"/>
+            <input t:type="DateField" t:id="startDate" t:format="yyyy-MM-dd" t:validate="required" size="30"/>
         </div>
         <div id="endDateControl" class="control-group">
             <t:label for="endDate"/>
-            <input t:type="DatePicker" t:id="endDate" t:format="yyyy-mm-dd" t:validate="required" size="30"/>
+            <input t:type="DateField" t:id="endDate" t:format="yyyy-MM-dd" t:validate="required" size="30"/>
         </div>
-        <br/>
+        <button t:type="submit" value="Save" />
+        <a t:type="eventlink" t:event="cancel" href="#" style="margin-left: 5px;">Cancel</a>
     </t:form>
     </body>
 </html>

@@ -8,17 +8,17 @@ import org.skife.jdbi.v2.sqlobject.BindingAnnotation;
 import java.lang.annotation.*;
 import java.util.Date;
 
-@BindingAnnotation(BindDate.BudgetBinderFactory.class)
+@BindingAnnotation(BindEndDate.BudgetBinderFactory.class)
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.PARAMETER})
-public @interface BindDate {
+public @interface BindEndDate {
 
     public static class BudgetBinderFactory implements BinderFactory {
 
         public Binder build(Annotation annotation) {
-          return new Binder<BindDate, Date>() {
-            public void bind(SQLStatement q, BindDate bind, Date date) {
-                q.bind("date", date != null ? new java.sql.Date(date.getTime()) : null);
+          return new Binder<BindEndDate, Date>() {
+            public void bind(SQLStatement q, BindEndDate bind, Date date) {
+                q.bind("end_date", date != null ? new java.sql.Date(date.getTime()) : null);
             }
           };
         }

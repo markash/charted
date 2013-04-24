@@ -5,23 +5,24 @@
     <body>
         <t:form t:id="categoryForm" >
             <t:errors/>
-
-            <t:label for="name"/>
-            <input t:type="TextField" t:id="name" t:validate="required,minlength=3" size="30"/>
-            <br/>
-            <t:label for="direction"/>
-            <input t:type="Select" t:id="direction" t:translate="cash-flow-direction" t:validate="required"/>
-            <br/>
-            <t:label for="color"/>
-            <input t:type="Select" t:id="color" t:translate="color" t:validate="required"/>
-            <br/>
-
-            <t:label for="section"/>
-            <t:select t:id="section" model="sections" validate="required"/>
-            <br />
-
+            <div class="control-group">
+                <t:label for="name"/>
+                <input t:type="TextField" t:id="name" t:validate="required,minlength=3" size="30"/>
+            </div>
+            <div class="control-group">
+                <t:label for="direction"/>
+                <input t:type="Select" t:id="direction" t:translate="cash-flow-direction" t:validate="required"/>
+            </div>
+            <div class="control-group">
+                <t:label for="color"/>
+                <input t:type="Select" t:id="color" t:translate="color" t:validate="required"/>
+            </div>
+            <div class="control-group">
+                <t:label for="section"/>
+                <t:select t:id="section" model="sections" validate="required"/>
+            </div>
             <button t:type="submit" value="Save" />
-            <a t:type="eventlink" t:event="refresh" href="#" style="margin-left: 5px;">Refresh</a>
+            <a t:type="eventlink" t:event="cancel" href="#" style="margin-left: 5px;">Cancel</a>
         </t:form>
     </body>
     <p:menu>

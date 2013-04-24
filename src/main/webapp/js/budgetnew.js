@@ -18,22 +18,10 @@ function formatDateMMMYYYY(date) {
     return month + " " + date.getFullYear();
 }
 
-var startDate = $('#startDate').datepicker()
-    .on('changeDate', function(ev) {
-        startDate.hide();
-        $('#endDate')[0].focus();
-    })
-    .data('datepicker');;
+var endDate = $('#endDate');
 
-var endDate = $('#endDate').datepicker()
-    .on('changeDate', function(ev) {
-        $('#name').val(formatDateMMMYYYY(ev.date));
-        endDate.hide();
-
-        if (ev.date < startDate.date) {
-            $("#endDateControl").addClass("error")
-        } else {
-            $("#endDateControl").removeClass("error")
-        }
-    })
-    .data('datepicker');;
+endDate.onblur(function() {
+    alert('onblur');
+    var date = new Date(endDate.val);
+    $('#name').val(formatDateMMMYYYY(date));
+});

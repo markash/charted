@@ -6,6 +6,7 @@ import org.skife.jdbi.v2.sqlobject.SqlUpdate;
 import org.skife.jdbi.v2.sqlobject.customizers.Mapper;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author Mark P Ashworth
@@ -24,14 +25,24 @@ public interface BudgetQuery {
     @SqlUpdate("insert into " + table + "(" +
             start_date + "," + end_date + "," + objective_id +
             ") values (" +
-            ":" + start_date + ",:" + end_date + ",:" + objective_id + ")")
-    void insert(@BindBudget Budget budget);
+            ":" + start_date + ",:" + end_date + ",:" + objective_id + ") returning " + budget_id)
+    Integer  insert(@BindBudget Budget budget);
+
+    @SqlUpdate("update " + table +
+            "set " + start_date + " = :" + start_date + "," +
+            end_date + " = :" + end_date + "," +
+            objective_id + " = :" + objective_id + "," +
+            " update_ts = now() " +
+            " where " + budget_id + " = :" + budget_id +
+            " returning " + fields)
+    @Mapper(BudgetCategoryMapper.class)
+    Budget update(@BindBudget Budget budget);
 
     @SqlQuery("select " + fields + " from " + table + " where " + budget_id + " = :" + budget_id)
     @Mapper(BudgetMapper.class)
     Budget findById(@Bind(budget_id) long id);
 
-    @SqlQuery("select " + fields + " from " + table + " where " + start_date + " <= :date and :date <= " + end_date)
+    @SqlQuery("select " + fields + " from " + table + " where " + start_date + " = :" + start_date + " and :" + end_date + " = " + end_date)
     @Mapper(BudgetMapper.class)
-    Budget findForDate(@BindDate Date date);
+    List<Budget> findForDates(@BindStartDate Date startDate, @BindEndDate Date endDate);
 }

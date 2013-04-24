@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df7453d-0526-4183-8b66-da8995fc5265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/budgetnew.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindStartDate.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindDate.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindEndDate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetDao.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" afterPath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetQuery.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/Category.tml" afterPath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/Category.tml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/budgetnew.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/budgetnew.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tapestry.iws" />
@@ -21,9 +26,9 @@
     <file path="/Contact.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363711721626" ignored="false" />
     <file path="/AddUser.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363678821606" ignored="false" />
     <file path="/AddUser.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363678951007" ignored="false" />
-    <file path="/fragment.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366655576551" ignored="false" />
+    <file path="/fragment.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366840064542" ignored="false" />
     <file path="/AddSection.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363684808506" ignored="false" />
-    <file path="/Dummy.txt" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366775816632" ignored="false" />
+    <file path="/Dummy.txt" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366832634099" ignored="false" />
     <file path="/AddSection.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363762327503" ignored="false" />
     <file path="/Text.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363686274174" ignored="false" />
     <file path="/AbstractBootstrapEditable.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363688943117" ignored="false" />
@@ -80,14 +85,14 @@
     <file path="/BudgetDatabaseTest.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365952172162" ignored="false" />
     <file path="/0001_initial.sql" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366654843126" ignored="false" />
     <file path="/0000_drop.sql" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365880330429" ignored="false" />
-    <file path="/BudgetQuery.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365951789042" ignored="false" />
+    <file path="/BudgetQuery.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366840320393" ignored="false" />
     <file path="/BindBudget.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365881622969" ignored="false" />
     <file path="/Objective.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365882260499" ignored="false" />
     <file path="/BudgetMapper.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365884231848" ignored="false" />
     <file path="/BudgetDatabaseTest.xml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365925729956" ignored="false" />
     <file path="/unitils.properties" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365890339679" ignored="false" />
     <file path="/PostgreSQLSupport.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365889895216" ignored="false" />
-    <file path="/BudgetDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365951111405" ignored="false" />
+    <file path="/BudgetDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366840416233" ignored="false" />
     <file path="/Dao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365920191431" ignored="false" />
     <file path="/DaoSettings.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365920323810" ignored="false" />
     <file path="/BaseDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365920998030" ignored="false" />
@@ -119,14 +124,14 @@
     <file path="/BudgetManager.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366659381567" ignored="false" />
     <file path="/BudgetSectionDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366659344958" ignored="false" />
     <file path="/DataException.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366655844079" ignored="false" />
-    <file path="/Category.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366659721807" ignored="false" />
+    <file path="/Category.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366833039962" ignored="false" />
     <file path="/BudgetSectionValueEncoder.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366660670576" ignored="false" />
-    <file path="/BudgetNew.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366781671914" ignored="false" />
-    <file path="/DatePicker.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366751706312" ignored="false" />
+    <file path="/BudgetNew.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366836610382" ignored="false" />
+    <file path="/DatePicker.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366834985306" ignored="false" />
     <file path="/DatePicker.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366746395701" ignored="false" />
     <file path="/README" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366751814402" ignored="false" />
-    <file path="/BudgetNew.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366778020960" ignored="false" />
-    <file path="/budgetnew.js" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366781739613" ignored="false" />
+    <file path="/BudgetNew.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366840476054" ignored="false" />
+    <file path="/budgetnew.js" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366838295231" ignored="false" />
     <file path="/README.md" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366781872446" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,38 +153,6 @@
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/../../unitils/unitils-dbunit/src/main/java/org/unitils/dbunit/DbUnitModule.java" line="227" class="org.unitils.dbunit.DbUnitModule" package="org.unitils.dbunit">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/dbmaintain/dbmaintain/2.4/dbmaintain-2.4-sources.jar!/org/dbmaintain/script/executedscriptinfo/impl/DefaultExecutedScriptInfoSource.java" line="151" class="org.dbmaintain.script.executedscriptinfo.impl.DefaultExecutedScriptInfoSource" package="org.dbmaintain.script.executedscriptinfo.impl">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -216,6 +189,53 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/../../unitils/unitils-dbunit/src/main/java/org/unitils/dbunit/DbUnitModule.java" line="227" class="org.unitils.dbunit.DbUnitModule" package="org.unitils.dbunit">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/dbmaintain/dbmaintain/2.4/dbmaintain-2.4-sources.jar!/org/dbmaintain/script/executedscriptinfo/impl/DefaultExecutedScriptInfoSource.java" line="151" class="org.dbmaintain.script.executedscriptinfo.impl.DefaultExecutedScriptInfoSource" package="org.dbmaintain.script.executedscriptinfo.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java" line="185" class="za.co.yellowfire.charted.components.DatePicker" package="za.co.yellowfire.charted.components">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -225,64 +245,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BudgetNew.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java">
+      <file leaf-file-name="DateField.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/DateField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="budgetnew.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/budgetnew.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="45" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="146" selection-end="244" vertical-scroll-proportion="0.13100436">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap-datepicker.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-datepicker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="69" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datepicker.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/datepicker.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.datatables.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery.datatables.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Select.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/Select.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="49" selection-start="6795" selection-end="6795" vertical-scroll-proportion="5.814815">
+            <state line="221" column="38" selection-start="7790" selection-end="7801" vertical-scroll-proportion="-18.037037">
               <folding />
             </state>
           </provider>
@@ -291,25 +257,86 @@
       <file leaf-file-name="BudgetNew.tml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="35" selection-start="368" selection-end="368" vertical-scroll-proportion="-6.25">
+            <state line="8" column="55" selection-start="298" selection-end="298" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextField.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/TextField.java">
+      <file leaf-file-name="BudgetNew.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="13" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0">
+            <state line="68" column="0" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatePicker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java">
+      <file leaf-file-name="BudgetDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="44" selection-start="803" selection-end="839" vertical-scroll-proportion="0.0">
+            <state line="34" column="49" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#868#1228#0" expanded="true" />
+                <element signature="e#1217#1218#0" expanded="true" />
+                <element signature="e#1316#1578#0" expanded="true" />
+                <element signature="e#1567#1568#0" expanded="true" />
+                <element signature="e#1666#1956#0" expanded="true" />
+                <element signature="e#1945#1946#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BudgetQuery.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="42" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BindStartDate.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindStartDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="18" selection-start="431" selection-end="431" vertical-scroll-proportion="0.3633218">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BindEndDate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindEndDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="18" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BindBudget.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindBudget.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="18" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BudgetCategoryQuery.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetCategoryQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="77" selection-start="1340" selection-end="1936" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BudgetCategoryDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetCategoryDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="78" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -345,22 +372,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/ColorTranslator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/BudgetSectionValueEncoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/services/AppModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindBudgetCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetCategoryQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetCategoryDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetCurrent.tml" />
         <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/components/DatePicker.tml" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.js" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java" />
         <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/budgetnew.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/Category.tml" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/budgetnew.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindStartDate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindEndDate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetQuery.java" />
       </list>
     </option>
   </component>
@@ -506,9 +533,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="TapestryProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -899,23 +923,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="TapestryProjectView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="103" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="115" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="115" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="103" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../unitils" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="119" />
@@ -931,16 +988,16 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -957,17 +1014,17 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="za.co.yellowfire.charted.pages.budget" />
-      <recent name="za.co.yellowfire.charted.domain" />
-      <recent name="za.co.yellowfire.charted" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget" />
       <recent name="$PROJECT_DIR$/src/test/resources/za/co/yellowfire/charted/domain" />
       <recent name="$PROJECT_DIR$/src/test/java/za/co/yellowfire/charted/domain" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/domain" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="za.co.yellowfire.charted.pages.budget" />
+      <recent name="za.co.yellowfire.charted.domain" />
+      <recent name="za.co.yellowfire.charted" />
     </key>
   </component>
   <component name="RunManager" selected="Jetty Server.Jetty ">
@@ -1193,19 +1250,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1234,19 +1278,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JettyConfiguration" factoryName="Local">
@@ -1265,6 +1307,21 @@
       </server-settings>
       <predefined_log_file id="Jetty" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1371,7 +1428,27 @@
       </server-settings>
       <predefined_log_file id="Jetty" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -1483,25 +1560,31 @@
       <created>1366751887012</created>
       <updated>1366751887012</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added budget new page with startDate, endDate and client side javascript to update the budget name">
+      <created>1366781905667</created>
+      <updated>1366781905667</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="875" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29614326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5276243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4364641" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25576368" sideWeight="0.8480663" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5041322" sideWeight="0.65090907" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34254143" sideWeight="0.65090907" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tapestry" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20665742" sideWeight="0.5006435" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41574585" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1509,13 +1592,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13199426" sideWeight="0.59917355" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23140496" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23919308" sideWeight="0.70385677" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33933717" sideWeight="0.5635359" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37052342" sideWeight="0.494852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43663913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41597795" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1561,7 +1642,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new budget page and added bootstrap-datepicker.js component and jquery-1.9.1.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added budget new page with startDate, endDate and client side javascript to update the budget name" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1579,6 +1660,7 @@
     <MESSAGE value="CR LF" />
     <MESSAGE value="Added budget category insert and update" />
     <MESSAGE value="Added new budget page and added bootstrap-datepicker.js component and jquery-1.9.1.js" />
+    <MESSAGE value="Added budget new page with startDate, endDate and client side javascript to update the budget name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1588,116 +1670,123 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.datepicker.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="52" selection-start="359" selection-end="359" vertical-scroll-proportion="0.03448276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/base/AbstractField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="51" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#2801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/base/AbstractTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="57" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.0">
+        <state line="54" column="27" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/TextField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0">
+        <state line="32" column="41" selection-start="1467" selection-end="1467" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/SelectModel.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/base/AbstractTextField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.67">
+        <state line="47" column="53" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/Select.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/base/AbstractField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="49" selection-start="6795" selection-end="6795" vertical-scroll-proportion="5.814815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-datepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="69" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery.datatables.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/datepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="38" column="22" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="44" selection-start="803" selection-end="839" vertical-scroll-proportion="0.0">
+        <state line="185" column="0" selection-start="5924" selection-end="5924" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1764#1794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/budgetnew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="20" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/DateField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="38" selection-start="7790" selection-end="7801" vertical-scroll-proportion="-18.037037">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="35" selection-start="368" selection-end="368" vertical-scroll-proportion="-6.25">
+        <state line="8" column="55" selection-start="298" selection-end="298" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/budgetnew.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetCategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="45" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
+        <state line="19" column="78" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetCategoryQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="146" selection-end="244" vertical-scroll-proportion="0.13100436">
+        <state line="45" column="77" selection-start="1340" selection-end="1936" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindBudget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="49" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#868#1228#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1316#1578#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1666#1956#0" expanded="true" />
+            <element signature="e#1945#1946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindEndDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="42" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BindStartDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="431" selection-end="431" vertical-scroll-proportion="0.3633218">
           <folding />
         </state>
       </provider>

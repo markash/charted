@@ -105,6 +105,7 @@ public class DatePicker extends AbstractField {
     }
 
     void beginRender(MarkupWriter writer) {
+
         String value = validationTracker.getInput(this);
 
         /*
@@ -117,30 +118,22 @@ public class DatePicker extends AbstractField {
             value = formatCurrentValue();
         }
 
+
         String clientId = getClientId();
 
         writer.element("div",
                 "class",            "input-append date",
-                "id",               clientId,
                 "data-date",        value,
                 "data-date-format", format
                 );
 
         writer.element("input",
+                "id",               clientId,
+                "name",             getControlName(),
                 "type",             "text",
                 "class",            "span2",
                 "size",             "16",
                 "value",            value);
-        writer.end();
-
-        writer.element("span",
-                "class",            "add-on");
-
-        writer.element("i",
-                "class",            "icon-calendar");
-
-        writer.end();
-        writer.end();
 
         writeDisabled(writer);
 
@@ -153,6 +146,19 @@ public class DatePicker extends AbstractField {
         resources.renderInformalParameters(writer);
 
         decorateInsideField();
+
+        writer.end();
+
+        writer.element("span",
+                "class",            "add-on");
+
+        writer.element("i",
+                "class",            "icon-calendar");
+
+        writer.end();
+        writer.end();
+
+
 
         writer.end(); // outer div
     }

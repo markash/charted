@@ -27,14 +27,48 @@ public class BudgetDao extends BaseDao<Budget> {
         });
     }
 
-    public Budget findForDate(final Date date) {
+    public Boolean existsForDates(final Date startDate, final Date endDate) {
+        return dbi.withHandle(new HandleCallback<Boolean>() {
+            @Override
+            public Boolean withHandle(Handle handle) throws Exception {
+                BudgetQuery query = handle.attach(BudgetQuery.class);
+                List<Budget> results = query.findForDates(startDate, endDate);
+                return results != null && results.size() > 0;
+            }
+        });
+    }
+
+    public Budget update(final Budget budget) {
         return dbi.withHandle(new HandleCallback<Budget>() {
             @Override
             public Budget withHandle(Handle handle) throws Exception {
                 BudgetQuery query = handle.attach(BudgetQuery.class);
-                return buildBudget(query.findForDate(date), handle);
+                return query.update(budget);
             }
         });
+    }
+
+    public Budget insert(final Budget budget) {
+        return dbi.withHandle(new HandleCallback<Budget>() {
+            @Override
+            public Budget withHandle(Handle handle) throws Exception {
+                BudgetQuery query = handle.attach(BudgetQuery.class);
+                return query.findById(query.insert(budget).longValue());
+            }
+        });
+    }
+
+    public Budget save(Budget budget) throws DataException {
+        Budget existing = null;
+        if (budget.getId() != null) {
+            existing = findById(budget.getId());
+        }
+
+        if (existing != null) {
+            return update(budget);
+        } else {
+            return insert(budget);
+        }
     }
 
     public Budget buildBudget(final Budget budget, final Handle handle) {
