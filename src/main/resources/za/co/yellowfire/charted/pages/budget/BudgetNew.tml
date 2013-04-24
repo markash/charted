@@ -5,9 +5,17 @@
     <body>
     <t:form t:id="budgetForm" >
         <t:errors/>
-
-        <t:label for="startDate"/>
-        <input t:type="DatePicker" t:id="startDate" t:format="yyyy-mm-dd" t:validate="required,minlength=3" size="30"/>
+        <t:label for="name"/>
+        <input t:type="TextField" t:id="name" size="30" t:disabled="true"/>
+        <br/>
+        <div id="startDateControl" class="control-group">
+            <t:label for="startDate"/>
+            <input t:type="DatePicker" t:id="startDate" t:format="yyyy-mm-dd" t:validate="required" size="30"/>
+        </div>
+        <div id="endDateControl" class="control-group">
+            <t:label for="endDate"/>
+            <input t:type="DatePicker" t:id="endDate" t:format="yyyy-mm-dd" t:validate="required" size="30"/>
+        </div>
         <br/>
     </t:form>
     </body>

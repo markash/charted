@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df7453d-0526-4183-8b66-da8995fc5265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/less/datepicker.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetCurrent.tml" afterPath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetCurrent.tml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/budgetnew.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" afterPath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tapestry.iws" />
@@ -28,7 +23,7 @@
     <file path="/AddUser.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363678951007" ignored="false" />
     <file path="/fragment.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366655576551" ignored="false" />
     <file path="/AddSection.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363684808506" ignored="false" />
-    <file path="/Dummy.txt" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366744216603" ignored="false" />
+    <file path="/Dummy.txt" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366775816632" ignored="false" />
     <file path="/AddSection.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363762327503" ignored="false" />
     <file path="/Text.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363686274174" ignored="false" />
     <file path="/AbstractBootstrapEditable.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363688943117" ignored="false" />
@@ -126,11 +121,13 @@
     <file path="/DataException.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366655844079" ignored="false" />
     <file path="/Category.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366659721807" ignored="false" />
     <file path="/BudgetSectionValueEncoder.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366660670576" ignored="false" />
-    <file path="/BudgetNew.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366751390237" ignored="false" />
+    <file path="/BudgetNew.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366781671914" ignored="false" />
     <file path="/DatePicker.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366751706312" ignored="false" />
     <file path="/DatePicker.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366746395701" ignored="false" />
     <file path="/README" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366751814402" ignored="false" />
-    <file path="/BudgetNew.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366750428953" ignored="false" />
+    <file path="/BudgetNew.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366778020960" ignored="false" />
+    <file path="/budgetnew.js" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366781739613" ignored="false" />
+    <file path="/README.md" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366781872446" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +148,38 @@
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/../../unitils/unitils-dbunit/src/main/java/org/unitils/dbunit/DbUnitModule.java" line="227" class="org.unitils.dbunit.DbUnitModule" package="org.unitils.dbunit">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/dbmaintain/dbmaintain/2.4/dbmaintain-2.4-sources.jar!/org/dbmaintain/script/executedscriptinfo/impl/DefaultExecutedScriptInfoSource.java" line="151" class="org.dbmaintain.script.executedscriptinfo.impl.DefaultExecutedScriptInfoSource" package="org.dbmaintain.script.executedscriptinfo.impl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -187,38 +216,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/../../unitils/unitils-dbunit/src/main/java/org/unitils/dbunit/DbUnitModule.java" line="227" class="org.unitils.dbunit.DbUnitModule" package="org.unitils.dbunit">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/dbmaintain/dbmaintain/2.4/dbmaintain-2.4-sources.jar!/org/dbmaintain/script/executedscriptinfo/impl/DefaultExecutedScriptInfoSource.java" line="151" class="org.dbmaintain.script.executedscriptinfo.impl.DefaultExecutedScriptInfoSource" package="org.dbmaintain.script.executedscriptinfo.impl">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -231,21 +228,62 @@
       <file leaf-file-name="BudgetNew.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="25" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="17" column="45" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.datepicker.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.datepicker.js">
+      <file leaf-file-name="budgetnew.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/budgetnew.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="45" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="13" selection-start="146" selection-end="244" vertical-scroll-proportion="0.13100436">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-datepicker.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-datepicker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="69" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datepicker.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/datepicker.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.datatables.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery.datatables.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Select.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/Select.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="197" column="49" selection-start="6795" selection-end="6795" vertical-scroll-proportion="5.814815">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -253,7 +291,16 @@
       <file leaf-file-name="BudgetNew.tml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="69" selection-start="318" selection-end="318" vertical-scroll-proportion="-5.625">
+            <state line="10" column="35" selection-start="368" selection-end="368" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextField.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/TextField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="13" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -262,66 +309,7 @@
       <file leaf-file-name="DatePicker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="46" selection-start="5782" selection-end="5782" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1764#1794#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="73" selection-end="132" vertical-scroll-proportion="0.16728625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-1.9.1.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="52" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateField.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/DateField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="35" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datefield.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2.jar!/META-INF/modules/t5/core/datefield.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2.jar!/META-INF/modules/t5/core/init.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2.jar!/META-INF/modules/t5/core/forms.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="25" column="44" selection-start="803" selection-end="839" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -357,8 +345,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/Category.tml" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/ColorTranslator.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/BudgetSectionValueEncoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/services/AppModule.java" />
@@ -368,11 +354,13 @@
         <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetCategoryDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetCurrent.tml" />
         <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/components/DatePicker.tml" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" />
         <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/budgetnew.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -518,6 +506,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="TapestryProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -914,20 +905,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="TapestryProjectView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="103" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="115" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="103" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="103" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../unitils" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="119" />
@@ -943,16 +931,16 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1205,6 +1193,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1233,17 +1234,19 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JettyConfiguration" factoryName="Local">
@@ -1262,21 +1265,6 @@
       </server-settings>
       <predefined_log_file id="Jetty" enabled="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1491,14 +1479,18 @@
       <created>1366662912892</created>
       <updated>1366662912893</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added new budget page and added bootstrap-datepicker.js component and jquery-1.9.1.js">
+      <created>1366751887012</created>
+      <updated>1366751887012</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="875" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55647385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29614326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25576368" sideWeight="0.8480663" order="2" side_tool="false" content_ui="tabs" />
@@ -1517,7 +1509,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13199426" sideWeight="0.59917355" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23140496" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28025937" sideWeight="0.44352618" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23919308" sideWeight="0.70385677" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37052342" sideWeight="0.494852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1569,7 +1561,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added budget category insert and update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new budget page and added bootstrap-datepicker.js component and jquery-1.9.1.js" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1586,6 +1578,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="CR LF" />
     <MESSAGE value="Added budget category insert and update" />
+    <MESSAGE value="Added new budget page and added bootstrap-datepicker.js component and jquery-1.9.1.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1595,131 +1588,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/components/bootstrap-editable.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.datepicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4348" column="0" selection-start="148151" selection-end="148151" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="52" selection-start="359" selection-end="359" vertical-scroll-proportion="0.03448276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/base/AbstractField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="51" selection-start="1611" selection-end="1611" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1362743682000" expanded="false" signature="-1:-1" placeholder="..." />
+            <element signature="e#0#2801#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-datepicker.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/base/AbstractTextField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/META-INF/assets/tapestry5/datepicker_106/js/datepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="47" column="57" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/DateField.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/TextField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="35" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
+        <state line="32" column="13" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2.jar!/META-INF/modules/t5/core/datefield.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/SelectModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="35" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.67">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2.jar!/META-INF/modules/t5/core/init.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/corelib/components/Select.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2.jar!/META-INF/modules/t5/core/forms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry-core/5.4-alpha-2/tapestry-core-5.4-alpha-2-sources.jar!/org/apache/tapestry5/services/javascript/JavaScriptSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="9" selection-start="3532" selection-end="3532" vertical-scroll-proportion="0.417603">
+        <state line="197" column="49" selection-start="6795" selection-end="6795" vertical-scroll-proportion="5.814815">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetNew.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="17" column="45" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-1.5.1.min.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap-datepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="69" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/jquery.datatables.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.datepicker.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/datepicker.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-1.9.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="52" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="69" selection-start="318" selection-end="318" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/DatePicker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="46" selection-start="5782" selection-end="5782" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1764#1794#0" expanded="true" />
-          </folding>
+        <state line="25" column="44" selection-start="803" selection-end="839" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/BudgetNew.tml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="73" selection-end="132" vertical-scroll-proportion="0.16728625">
+        <state line="10" column="35" selection-start="368" selection-end="368" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/budgetnew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="45" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="146" selection-end="244" vertical-scroll-proportion="0.13100436">
           <folding />
         </state>
       </provider>
