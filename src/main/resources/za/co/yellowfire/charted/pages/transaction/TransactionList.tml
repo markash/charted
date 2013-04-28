@@ -1,0 +1,28 @@
+<html t:type="layout"
+      title="Transactions"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Transactions</a>
+                <ul class="nav">
+                </ul>
+            </div>
+        </div>
+        <t:form t:id="transactionsForm" >
+            <t:grid source="transactionDataSource" row="transaction" model="transactionModel" pagerPosition="bottom" class="table table-hover table-bordered">
+                <p:empty>
+                    <p>There are no transaction to display; you can <t:pagelink page="statement/upload">upload a statement</t:pagelink>.</p>
+                </p:empty>
+            </t:grid>
+            <button t:type="submit" value="Save" />
+            <a t:type="eventlink" t:event="refresh" href="#" style="margin-left: 5px;">Refresh</a>
+        </t:form>
+    </body>
+    <p:menu>
+        <t:menu sections="menuSections" />
+    </p:menu>
+    <p:sidebar>
+    </p:sidebar>
+</html>

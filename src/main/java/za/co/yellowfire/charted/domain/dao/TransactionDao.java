@@ -5,6 +5,8 @@ import org.skife.jdbi.v2.tweak.HandleCallback;
 import za.co.yellowfire.charted.domain.DataException;
 import za.co.yellowfire.charted.domain.Transaction;
 
+import java.util.List;
+
 /**
  * @author Mark P Ashworth
  * @version 0.1.0
@@ -21,6 +23,16 @@ public class TransactionDao extends BaseDao<Transaction> {
             public Transaction withHandle(Handle handle) throws Exception {
                 TransactionQuery query = handle.attach(TransactionQuery.class);
                 return query.findById(id);
+            }
+        });
+    }
+
+    public List<Transaction> findAll() {
+        return dbi.withHandle(new HandleCallback<List<Transaction>>() {
+            @Override
+            public List<Transaction> withHandle(Handle handle) throws Exception {
+                TransactionQuery query = handle.attach(TransactionQuery.class);
+                return query.findAll();
             }
         });
     }
