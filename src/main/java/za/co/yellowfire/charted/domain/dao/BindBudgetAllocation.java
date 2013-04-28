@@ -1,9 +1,10 @@
-package za.co.yellowfire.charted.domain;
+package za.co.yellowfire.charted.domain.dao;
 
 import org.skife.jdbi.v2.SQLStatement;
 import org.skife.jdbi.v2.sqlobject.Binder;
 import org.skife.jdbi.v2.sqlobject.BinderFactory;
 import org.skife.jdbi.v2.sqlobject.BindingAnnotation;
+import za.co.yellowfire.charted.domain.BudgetAllocation;
 
 import java.lang.annotation.*;
 

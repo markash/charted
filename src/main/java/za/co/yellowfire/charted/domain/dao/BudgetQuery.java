@@ -1,9 +1,10 @@
-package za.co.yellowfire.charted.domain;
+package za.co.yellowfire.charted.domain.dao;
 
 import org.skife.jdbi.v2.sqlobject.Bind;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;
 import org.skife.jdbi.v2.sqlobject.SqlUpdate;
 import org.skife.jdbi.v2.sqlobject.customizers.Mapper;
+import za.co.yellowfire.charted.domain.Budget;
 
 import java.util.Date;
 import java.util.List;
@@ -41,6 +42,10 @@ public interface BudgetQuery {
     @SqlQuery("select " + fields + " from " + table + " where " + budget_id + " = :" + budget_id)
     @Mapper(BudgetMapper.class)
     Budget findById(@Bind(budget_id) long id);
+
+    @SqlQuery("select " + fields + " from " + table + " where " + start_date + " <= :" + start_date + " and :" + start_date + " <= " + end_date)
+    @Mapper(BudgetMapper.class)
+    List<Budget> findForDate(@BindStartDate Date startDate);
 
     @SqlQuery("select " + fields + " from " + table + " where " + start_date + " = :" + start_date + " and :" + end_date + " = " + end_date)
     @Mapper(BudgetMapper.class)

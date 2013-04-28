@@ -7,6 +7,7 @@ import org.unitils.core.ConfigurationLoader;
 import org.unitils.dbunit.DbUnitModule;
 import org.unitils.dbunit.annotation.DataSet;
 import org.unitilsnew.UnitilsTestNG;
+import za.co.yellowfire.charted.domain.dao.BudgetDao;
 
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;

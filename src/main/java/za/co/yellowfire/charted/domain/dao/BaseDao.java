@@ -1,6 +1,7 @@
-package za.co.yellowfire.charted.domain;
+package za.co.yellowfire.charted.domain.dao;
 
 import org.skife.jdbi.v2.DBI;
+import za.co.yellowfire.charted.domain.Dao;
 
 /**
  * @author Mark P Ashworth

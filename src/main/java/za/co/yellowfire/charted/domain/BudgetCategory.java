@@ -221,11 +221,11 @@ public class BudgetCategory implements Serializable, Comparable<BudgetCategory> 
     public void allocate(List<Transaction> transactions) {
         this.actualAmount = ZERO;
 
-        for (Transaction transaction : transactions) {
-            if (transaction.getCategory().equals(this)) {
-                this.actualAmount = this.actualAmount.add(transaction.getAmount().setScale(2).abs());
-            }
-        }
+//        for (Transaction transaction : transactions) {
+//            if (transaction.getCategory().equals(this)) {
+//                this.actualAmount = this.actualAmount.add(transaction.getAmount().setScale(2).abs());
+//            }
+//        }
     }
 
     /**

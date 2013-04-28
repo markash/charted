@@ -11,16 +11,14 @@ import org.apache.tapestry5.ioc.services.SymbolProvider;
 import org.apache.tapestry5.ioc.services.ThreadLocale;
 import org.apache.tapestry5.jpa.EntityManagerSource;
 import org.apache.tapestry5.jpa.PersistenceUnitConfigurer;
-import org.apache.tapestry5.jpa.TapestryPersistenceUnitInfo;
 import org.apache.tapestry5.services.*;
 import org.apache.tapestry5.services.compatibility.Compatibility;
 import org.apache.tapestry5.services.compatibility.Trait;
-import org.skife.jdbi.v2.Handle;
 import org.slf4j.Logger;
-import za.co.yellowfire.charted.domain.BudgetCategoryDao;
-import za.co.yellowfire.charted.domain.BudgetDao;
+import za.co.yellowfire.charted.domain.dao.*;
 import za.co.yellowfire.charted.domain.BudgetSection;
-import za.co.yellowfire.charted.domain.BudgetSectionDao;
+import za.co.yellowfire.charted.domain.manager.OfxStatementImporter;
+import za.co.yellowfire.charted.domain.manager.StatementImporter;
 import za.co.yellowfire.charted.translator.BudgetSectionValueEncoder;
 import za.co.yellowfire.charted.translator.CashFlowDirectionTranslator;
 import za.co.yellowfire.charted.translator.ColorTranslator;
@@ -31,6 +29,10 @@ import za.co.yellowfire.charted.translator.ColorTranslator;
  */
 public class AppModule {
     public static void bind(ServiceBinder binder) {
+
+        final AccountDao accountDao = new AccountDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
+        final TransactionDao transactionDao = new TransactionDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
+
         binder.bind(BudgetDao.class, new ServiceBuilder<BudgetDao>() {
             @Override
             public BudgetDao buildService(ServiceResources serviceResources) {
@@ -47,6 +49,24 @@ public class AppModule {
             @Override
             public BudgetCategoryDao buildService(ServiceResources serviceResources) {
                 return new BudgetCategoryDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
+            }
+        });
+        binder.bind(TransactionDao.class, new ServiceBuilder<TransactionDao>() {
+            @Override
+            public TransactionDao buildService(ServiceResources serviceResources) {
+                return transactionDao;
+            }
+        });
+        binder.bind(AccountDao.class, new ServiceBuilder<AccountDao>() {
+            @Override
+            public AccountDao buildService(ServiceResources serviceResources) {
+                return accountDao;
+            }
+        });
+        binder.bind(StatementImporter.class, new ServiceBuilder<StatementImporter>() {
+            @Override
+            public StatementImporter buildService(ServiceResources serviceResources) {
+                return new OfxStatementImporter(accountDao, transactionDao);
             }
         });
     }

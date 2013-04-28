@@ -3,7 +3,7 @@ package za.co.yellowfire.charted.translator;
 import org.apache.tapestry5.ValueEncoder;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import za.co.yellowfire.charted.domain.BudgetSection;
-import za.co.yellowfire.charted.domain.BudgetSectionDao;
+import za.co.yellowfire.charted.domain.dao.BudgetSectionDao;
 
 /**
  * @author Mark P Ashworth

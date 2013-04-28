@@ -9,6 +9,8 @@ import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import za.co.yellowfire.charted.database.DataAccessException;
 import za.co.yellowfire.charted.domain.*;
+import za.co.yellowfire.charted.domain.dao.BudgetCategoryDao;
+import za.co.yellowfire.charted.domain.dao.BudgetSectionDao;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,6 +1,9 @@
 package za.co.yellowfire.charted.domain;
 
 import org.apache.tapestry5.ioc.annotations.Inject;
+import za.co.yellowfire.charted.domain.dao.BudgetCategoryDao;
+import za.co.yellowfire.charted.domain.dao.BudgetDao;
+import za.co.yellowfire.charted.domain.dao.BudgetSectionDao;
 
 import java.util.List;
 

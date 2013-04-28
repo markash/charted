@@ -4,6 +4,10 @@ import org.skife.jdbi.v2.DBI;
 import org.skife.jdbi.v2.Handle;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import za.co.yellowfire.charted.domain.dao.BudgetAllocationMapper;
+import za.co.yellowfire.charted.domain.dao.BudgetAllocationQuery;
+import za.co.yellowfire.charted.domain.dao.TransactionMapper;
+import za.co.yellowfire.charted.domain.dao.TransactionQuery;
 
 /**
  * @author Mark P Ashworth

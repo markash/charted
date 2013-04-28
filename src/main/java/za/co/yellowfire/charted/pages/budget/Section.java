@@ -7,6 +7,7 @@ import org.apache.tapestry5.corelib.components.TextField;
 import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import za.co.yellowfire.charted.domain.*;
+import za.co.yellowfire.charted.domain.dao.BudgetDao;
 
 import java.util.Arrays;
 import java.util.List;

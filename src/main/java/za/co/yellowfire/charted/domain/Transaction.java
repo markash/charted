@@ -18,7 +18,6 @@ import java.util.Map;
 @Entity(name = "transaction")
 @Table(name = "transaction")
 @Access(AccessType.FIELD)
-//@ChangeTracking(ChangeTrackingType.OBJECT)
 @NamedQueries({
         @NamedQuery(
                 name = "qry.transactions",
@@ -84,10 +83,10 @@ public class Transaction implements Serializable {
     @Column(name = "memo")
     private String memo;
 
-    @ManyToOne
-    @JoinFetch(JoinFetchType.OUTER)
-    @JoinColumn(name = "budget_category")
-    private BudgetCategory category;
+//    @ManyToOne
+//    @JoinFetch(JoinFetchType.OUTER)
+//    @JoinColumn(name = "budget_category")
+//    private BudgetCategory category;
 
     @SuppressWarnings("unused")
     public Transaction() { }
@@ -96,17 +95,17 @@ public class Transaction implements Serializable {
         this(id, amount, dateAvailable, dateInitiated, datePosted, memo, null);
     }
 
-    public Transaction(String id, BigDecimal amount, Date dateAvailable, Date dateInitiated, Date datePosted, String memo, BudgetCategory category) {
+    public Transaction(String id, BigDecimal amount, Date dateAvailable, Date dateInitiated, Date datePosted, String memo, Account account) {
         this.id = id;
         this.amount = amount;
         this.dateAvailable = dateAvailable;
         this.dateInitiated = dateInitiated;
         this.datePosted = datePosted;
         this.memo = memo;
-        this.category = category;
+        this.account = account;
     }
 
-    public static Transaction from(net.sf.ofx4j.domain.data.common.Transaction transaction) {
+    public static Transaction from(net.sf.ofx4j.domain.data.common.Transaction transaction, Account account) {
 
         return new Transaction(
                 transaction.getId(),
@@ -114,7 +113,8 @@ public class Transaction implements Serializable {
                 transaction.getDateAvailable(),
                 transaction.getDateInitiated(),
                 transaction.getDatePosted(),
-                transaction.getMemo()
+                transaction.getMemo(),
+                account
         );
     }
 
@@ -184,13 +184,13 @@ public class Transaction implements Serializable {
         return memo;
     }
 
-    public BudgetCategory getCategory() {
-        return category;
-    }
-
-    public void setCategory(BudgetCategory category) {
-        this.category = category;
-    }
+//    public BudgetCategory getCategory() {
+//        return category;
+//    }
+//
+//    public void setCategory(BudgetCategory category) {
+//        this.category = category;
+//    }
 
     @Override
     public boolean equals(Object o) {
@@ -218,7 +218,7 @@ public class Transaction implements Serializable {
                 ", dateInitiated=" + (dateInitiated != null ? dateInitiated : "null")  +
                 ", datePosted=" + (datePosted != null ? datePosted : "null") +
                 ", memo='" + (memo != null ? memo : "null") + '\'' +
-                ", budgetCategory='" + (category != null ? category.getId() : "null") + '\'' +
+                ", account='" + (account != null ? account.getNumber() : "null") + '\'' +
                 '}';
     }
 }

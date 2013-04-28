@@ -1,7 +1,8 @@
-package za.co.yellowfire.charted.domain;
+package za.co.yellowfire.charted.domain.dao;
 
 import org.skife.jdbi.v2.Handle;
 import org.skife.jdbi.v2.tweak.HandleCallback;
+import za.co.yellowfire.charted.domain.BudgetSection;
 
 import java.util.List;
 
@@ -15,8 +16,6 @@ public class BudgetSectionDao extends BaseDao<BudgetSection> {
         super(url, user, password);
     }
 
-
-    @Override
     public BudgetSection findById(final Long id) {
         return dbi.withHandle(new HandleCallback<BudgetSection>() {
             @Override

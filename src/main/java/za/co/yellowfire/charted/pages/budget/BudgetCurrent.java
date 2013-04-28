@@ -14,6 +14,8 @@ import org.apache.tapestry5.services.BeanModelSource;
 import org.apache.tapestry5.services.PageRenderLinkSource;
 import za.co.yellowfire.charted.database.DataAccessException;
 import za.co.yellowfire.charted.domain.*;
+import za.co.yellowfire.charted.domain.dao.BudgetCategoryDao;
+import za.co.yellowfire.charted.domain.dao.BudgetDao;
 
 import java.text.SimpleDateFormat;
 import java.util.*;

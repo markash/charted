@@ -1,7 +1,11 @@
-package za.co.yellowfire.charted.domain;
+package za.co.yellowfire.charted.domain.dao;
 
 import org.skife.jdbi.v2.Handle;
 import org.skife.jdbi.v2.tweak.HandleCallback;
+import za.co.yellowfire.charted.domain.Budget;
+import za.co.yellowfire.charted.domain.BudgetSection;
+import za.co.yellowfire.charted.domain.DataException;
+import za.co.yellowfire.charted.domain.ObjectiveQuery;
 
 import java.util.Date;
 import java.util.List;
@@ -16,13 +20,23 @@ public class BudgetDao extends BaseDao<Budget> {
         super(url, user, password);
     }
 
-    @Override
     public Budget findById(final Long id) {
         return dbi.withHandle(new HandleCallback<Budget>() {
             @Override
             public Budget withHandle(Handle handle) throws Exception {
                 BudgetQuery query = handle.attach(BudgetQuery.class);
                 return buildBudget(query.findById(id), handle);
+            }
+        });
+    }
+
+    public Budget findForDate(final Date startDate) {
+        return dbi.withHandle(new HandleCallback<Budget>() {
+            @Override
+            public Budget withHandle(Handle handle) throws Exception {
+                BudgetQuery query = handle.attach(BudgetQuery.class);
+                List<Budget> results = query.findForDate(startDate);
+                return (results != null && results.size() > 0) ? results.get(0) : null;
             }
         });
     }

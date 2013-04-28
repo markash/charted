@@ -1,7 +1,9 @@
-package za.co.yellowfire.charted.domain;
+package za.co.yellowfire.charted.domain.dao;
 
 import org.skife.jdbi.v2.StatementContext;
 import org.skife.jdbi.v2.tweak.ResultSetMapper;
+import za.co.yellowfire.charted.domain.*;
+import za.co.yellowfire.charted.domain.dao.TransactionQuery;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -8,7 +8,9 @@ import org.apache.tapestry5.upload.services.UploadedFile;
 import za.co.yellowfire.charted.domain.MenuItem;
 import za.co.yellowfire.charted.domain.MenuSection;
 import za.co.yellowfire.charted.domain.Statement;
+import za.co.yellowfire.charted.domain.manager.StatementImporter;
 
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Arrays;
@@ -22,8 +24,8 @@ public class StatementUpload {
     @Property
     private UploadedFile file;
 
-    @PersistenceContext
-    private EntityManager em;
+    @Inject
+    private StatementImporter statementImporter;
 
     @Persist(PersistenceConstants.FLASH)
     @Property
@@ -36,7 +38,7 @@ public class StatementUpload {
     }
 
     public void onSuccess() throws Exception {
-        Statement.importStatement(em, file.getStream());
+        statementImporter.importStatement(file.getStream());
         message = "Uploaded " + file.getFileName() + " successfully";
     }
 

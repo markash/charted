@@ -1,7 +1,9 @@
-package za.co.yellowfire.charted.domain;
+package za.co.yellowfire.charted.domain.dao;
 
 import org.skife.jdbi.v2.Handle;
 import org.skife.jdbi.v2.tweak.HandleCallback;
+import za.co.yellowfire.charted.domain.BudgetCategory;
+import za.co.yellowfire.charted.domain.DataException;
 
 /**
  * @author Mark P Ashworth
@@ -13,7 +15,6 @@ public class BudgetCategoryDao extends BaseDao<BudgetCategory> {
         super(url, user, password);
     }
 
-    @Override
     public BudgetCategory findById(final Long id) {
         return dbi.withHandle(new HandleCallback<BudgetCategory>() {
             @Override

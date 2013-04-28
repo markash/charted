@@ -19,6 +19,8 @@ create table account
   bank_id character varying(64),
   branch_id character varying(64),
   account_type character varying(16),
+  create_ts timestamp NULL default now(),
+  update_ts timestamp NULL,
   CONSTRAINT pk_account PRIMARY KEY (account_nbr)
 ) without oids;
 
