@@ -2,6 +2,7 @@ package za.co.yellowfire.charted.pages.transaction;
 
 import org.apache.tapestry5.EventContext;
 import org.apache.tapestry5.annotations.Import;
+import org.apache.tapestry5.annotations.InjectPage;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.beaneditor.BeanModel;
 import org.apache.tapestry5.ioc.Messages;
@@ -45,8 +46,16 @@ public class TransactionList {
     @Inject
     private PageRenderLinkSource pageRenderLinkSource;
 
+    @InjectPage
+    private TransactionAllocate transactionAllocate;
+
     public void onActivate(EventContext eventContext) throws DataException {
         transactionDataSource = new TransactionDataSource(transactionDao.findAll());
+    }
+
+    public Object onActionFromAllocate(String transactionId) {
+        transactionAllocate.setTransactionId(transactionId);
+        return transactionAllocate;
     }
 
     public void setupRender() {

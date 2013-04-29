@@ -12,6 +12,9 @@
         </div>
         <t:form t:id="transactionsForm" >
             <t:grid source="transactionDataSource" row="transaction" model="transactionModel" pagerPosition="bottom" class="table table-hover table-bordered">
+                <p:actionCell>
+                    <a t:type="actionlink" t:id="allocate" context="transaction.id">Allocate</a><br />
+                </p:actionCell>
                 <p:empty>
                     <p>There are no transaction to display; you can <t:pagelink page="statement/upload">upload a statement</t:pagelink>.</p>
                 </p:empty>

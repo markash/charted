@@ -6,48 +6,39 @@ import org.skife.jdbi.v2.sqlobject.SqlUpdate;
 import org.skife.jdbi.v2.sqlobject.customizers.Mapper;
 import za.co.yellowfire.charted.domain.BudgetAllocation;
 
+import java.math.BigDecimal;
+import java.util.List;
+
 /**
  * @author Mark P Ashworth
  * @version 0.1.0
  */
 public interface BudgetAllocationQuery {
-    String id = "id";
+    String allocation_id = "allocation_id";
     String transaction_id = "transaction_id";
     String budget_category_id = "budget_category_id";
     String amount = "amount";
+    String create_ts = "create_ts";
+    String update_ts = "update_ts";
 
-    String fields = id + "," + transaction_id + "," + budget_category_id + "," + amount;
+    String table = "budget_allocation";
+    String fields = allocation_id + "," + transaction_id + "," + budget_category_id + "," + amount + "," + create_ts + "," + update_ts;
 
-    @SqlUpdate("create table if not exists budget_allocation (" +
-            "id bigint primary key, " +
-            "transaction_id character varying(255) not null, " +
-            "budget_category_id bigint not null, " +
-            "amount numeric(38, 4) not null" +
-            ")")
-    void createTable();
-
-    @SqlUpdate("insert into budget_allocation (" + fields + ") values (nextval('seq_identity'), :tx_id, :bc_id, :amount)")
-    void insert(@BindBudgetAllocation BudgetAllocation allocation);
-
-    @SqlQuery("select " +
-            "0 as \"ba_id\"," +
-            "1 as \"ba_amount\"," +
-            "tx_id," +
-            "tx_amount," +
-            "tx_date_available," +
-            "tx_date_initiated," +
-            "tx_date_posted," +
-            "tx_memo," +
-            "tx_account_nbr," +
-            "bc_id," +
-            "bc_name," +
-            "bc_budget_section," +
-            "bc_budget_date," +
-            "bc_budget_amount," +
-            "bc_color," +
-            "bc_direction," +
-            "bc_matches " +
-            "from vw_budget_allocation where 1 = :id")
+    @SqlQuery("insert into " + table + " (" +
+            transaction_id + "," + budget_category_id + "," + amount  +
+            ") values (" +
+            ":" + transaction_id + ", :" + budget_category_id + ", :" + amount + ") returning " + fields)
     @Mapper(BudgetAllocationMapper.class)
-    BudgetAllocation findById(@Bind("id") int id);
+    BudgetAllocation insert(@BindBudgetAllocation BudgetAllocation allocation);
+
+    @SqlQuery("select " + fields + " from " + table + " where :allocation_id = allocation_id")
+    @Mapper(BudgetAllocationMapper.class)
+    BudgetAllocation findById(@Bind("allocation_id") int allocation_id);
+
+    @SqlQuery("select " + fields + " from " + table)
+    @Mapper(BudgetAllocationMapper.class)
+    List<BudgetAllocation> findAll();
+
+    @SqlQuery("select coalesce(sum(" + amount + "), 0.00) \"amount\" from budget_allocation where transaction_id = :transaction_id")
+    BigDecimal sumForTransaction(@Bind("transaction_id") String transactionId);
 }

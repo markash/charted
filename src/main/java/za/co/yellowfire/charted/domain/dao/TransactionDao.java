@@ -5,6 +5,7 @@ import org.skife.jdbi.v2.tweak.HandleCallback;
 import za.co.yellowfire.charted.domain.DataException;
 import za.co.yellowfire.charted.domain.Transaction;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,7 +23,8 @@ public class TransactionDao extends BaseDao<Transaction> {
             @Override
             public Transaction withHandle(Handle handle) throws Exception {
                 TransactionQuery query = handle.attach(TransactionQuery.class);
-                return query.findById(id);
+                BudgetAllocationQuery budgetAllocationQuery = handle.attach(BudgetAllocationQuery.class);
+                return build(query.findById(id), budgetAllocationQuery);
             }
         });
     }
@@ -32,7 +34,8 @@ public class TransactionDao extends BaseDao<Transaction> {
             @Override
             public List<Transaction> withHandle(Handle handle) throws Exception {
                 TransactionQuery query = handle.attach(TransactionQuery.class);
-                return query.findAll();
+                BudgetAllocationQuery budgetAllocationQuery = handle.attach(BudgetAllocationQuery.class);
+                return build(query.findAll(), budgetAllocationQuery);
             }
         });
     }
@@ -42,7 +45,8 @@ public class TransactionDao extends BaseDao<Transaction> {
             @Override
             public Transaction withHandle(Handle handle) throws Exception {
                 TransactionQuery query = handle.attach(TransactionQuery.class);
-                return query.update(transaction);
+                BudgetAllocationQuery budgetAllocationQuery = handle.attach(BudgetAllocationQuery.class);
+                return build(query.update(transaction), budgetAllocationQuery);
             }
         });
     }
@@ -52,7 +56,8 @@ public class TransactionDao extends BaseDao<Transaction> {
             @Override
             public Transaction withHandle(Handle handle) throws Exception {
                 TransactionQuery query = handle.attach(TransactionQuery.class);
-                return query.insert(transaction);
+                BudgetAllocationQuery budgetAllocationQuery = handle.attach(BudgetAllocationQuery.class);
+                return build(query.insert(transaction), budgetAllocationQuery);
             }
         });
     }
@@ -68,5 +73,18 @@ public class TransactionDao extends BaseDao<Transaction> {
         } else {
             return insert(transaction);
         }
+    }
+
+    public List<Transaction> build(final List<Transaction> transactions, final BudgetAllocationQuery budgetAllocationQuery) {
+        List<Transaction> results = new ArrayList<Transaction>(transactions.size());
+        for (Transaction transaction : transactions) {
+            results.add(build(transaction, budgetAllocationQuery));
+        }
+        return results;
+    }
+
+    public Transaction build(Transaction transaction, BudgetAllocationQuery budgetAllocationQuery) {
+        transaction.setAllocated(budgetAllocationQuery.sumForTransaction(transaction.getId()));
+        return transaction;
     }
 }

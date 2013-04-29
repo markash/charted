@@ -1,0 +1,39 @@
+<html t:type="layout"
+      title="Allocate Transaction"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+    <body>
+        <t:form t:id="allocateForm" >
+            <t:errors/>
+            <div class="control-group">
+                <t:label for="transaction.id"/>
+                <input t:type="TextField" t:id="transaction.id" size="30" disabled="true"/>
+            </div>
+            <div class="control-group">
+                <t:label for="transaction.datePosted"/>
+                <input t:type="TextField" t:id="transaction.datePosted" size="30"/>
+            </div>
+            <div class="control-group">
+                <t:label for="transaction.amount"/>
+                <input t:type="TextField" t:id="transaction.amount" size="30"/>
+            </div>
+            <div class="control-group">
+                <t:label for="transaction.memo"/>
+                <input t:type="TextField" t:id="transaction.memo" size="30"/>
+            </div>
+            <t:grid source="allocations" row="allocation" model="allocationModel" pagerPosition="bottom" class="table table-hover table-bordered">
+                <p:empty>
+                    <p>There are no allocations.</p>
+                </p:empty>
+            </t:grid>
+            <button t:type="submit" value="Save" />
+            <a t:type="eventlink" t:event="cancel" href="#" style="margin-left: 5px;">Cancel</a>
+        </t:form>
+    </body>
+    <p:menu>
+        <t:menu sections="menuSections" />
+    </p:menu>
+    <p:sidebar>
+
+    </p:sidebar>
+</html>

@@ -32,6 +32,7 @@ public class AppModule {
 
         final AccountDao accountDao = new AccountDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
         final TransactionDao transactionDao = new TransactionDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
+        final BudgetAllocationDao budgetAllocationDao = new BudgetAllocationDao("jdbc:postgresql://localhost/charted-test", "uncharted", "uncharted");
 
         binder.bind(BudgetDao.class, new ServiceBuilder<BudgetDao>() {
             @Override
@@ -55,6 +56,12 @@ public class AppModule {
             @Override
             public TransactionDao buildService(ServiceResources serviceResources) {
                 return transactionDao;
+            }
+        });
+        binder.bind(BudgetAllocationDao.class, new ServiceBuilder<BudgetAllocationDao>() {
+            @Override
+            public BudgetAllocationDao buildService(ServiceResources serviceResources) {
+                return budgetAllocationDao;
             }
         });
         binder.bind(AccountDao.class, new ServiceBuilder<AccountDao>() {

@@ -12,6 +12,7 @@ Changes
 
 *2013-04-28 : Added the transactions page
 
+-2013-04-29 : Added transaction allocate page and associated dao methods
 
 bootstap-datepicker.js
 ----------------------

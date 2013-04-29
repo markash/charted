@@ -83,6 +83,9 @@ public class Transaction implements Serializable {
     @Column(name = "memo")
     private String memo;
 
+    @Transient
+    private BigDecimal allocated;
+
 //    @ManyToOne
 //    @JoinFetch(JoinFetchType.OUTER)
 //    @JoinColumn(name = "budget_category")
@@ -90,6 +93,10 @@ public class Transaction implements Serializable {
 
     @SuppressWarnings("unused")
     public Transaction() { }
+
+    public Transaction(String id) {
+        this(id, null, null, null, null, null, null);
+    }
 
     public Transaction(String id, BigDecimal amount, Date dateAvailable, Date dateInitiated, Date datePosted, String memo) {
         this(id, amount, dateAvailable, dateInitiated, datePosted, memo, null);
@@ -184,13 +191,17 @@ public class Transaction implements Serializable {
         return memo;
     }
 
-//    public BudgetCategory getCategory() {
-//        return category;
-//    }
-//
-//    public void setCategory(BudgetCategory category) {
-//        this.category = category;
-//    }
+    public BigDecimal getAllocated() {
+        return this.allocated;
+    }
+
+    public void setAllocated(BigDecimal allocated) {
+        this.allocated = allocated;
+    }
+
+    public BigDecimal getRemainder() {
+        return getAmount().subtract(getAllocated());
+    }
 
     @Override
     public boolean equals(Object o) {

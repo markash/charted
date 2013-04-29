@@ -12,7 +12,6 @@ public class BudgetAllocationTest extends BaseJdbiTest {
 
     @Test
     public void findByIdTest() throws Exception {
-        getBudgetAllocationQuery().createTable();
         Transaction tx = getTransactionQuery().findAll().get(0);
 
         BudgetAllocation allocation = new BudgetAllocation(new BudgetCategory(202L), tx, new BigDecimal("100.00"));
