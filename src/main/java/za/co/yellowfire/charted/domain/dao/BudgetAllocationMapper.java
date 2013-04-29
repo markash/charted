@@ -17,7 +17,7 @@ public class BudgetAllocationMapper implements ResultSetMapper<BudgetAllocation>
     public BudgetAllocation map(int index, ResultSet r, StatementContext ctx) throws SQLException {
         return new BudgetAllocation(
                 r.getLong(BudgetAllocationQuery.allocation_id),
-                new BudgetCategory(r.getLong(BudgetAllocationQuery.budget_category_id)),
+                new BudgetCategory(r.getLong(BudgetAllocationQuery.category_id)),
                 new Transaction(r.getString(BudgetAllocationQuery.transaction_id)),
                 r.getBigDecimal(BudgetAllocationQuery.amount));
     }

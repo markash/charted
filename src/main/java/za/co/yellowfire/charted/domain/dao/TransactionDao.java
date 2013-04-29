@@ -1,5 +1,6 @@
 package za.co.yellowfire.charted.domain.dao;
 
+import org.apache.commons.lang3.StringUtils;
 import org.skife.jdbi.v2.Handle;
 import org.skife.jdbi.v2.tweak.HandleCallback;
 import za.co.yellowfire.charted.domain.DataException;
@@ -18,7 +19,9 @@ public class TransactionDao extends BaseDao<Transaction> {
         super(url, user, password);
     }
 
-    public Transaction findById(final String id) {
+    public Transaction findById(final String id) throws DataException {
+        if (StringUtils.isEmpty(id)) { throw new DataException("The transaction id was not provided."); }
+
         return dbi.withHandle(new HandleCallback<Transaction>() {
             @Override
             public Transaction withHandle(Handle handle) throws Exception {

@@ -7,7 +7,7 @@ import java.math.BigDecimal;
  * @author Mark P Ashworth
  * @version 0.1.0
  */
-public class BudgetAllocation implements Serializable {
+public class BudgetAllocation implements DomainObject {
 
     private Long id;
 
@@ -34,6 +34,10 @@ public class BudgetAllocation implements Serializable {
 
     public BudgetCategory getBudgetCategory() {
         return budgetCategory;
+    }
+
+    public void setBudgetCategory(BudgetCategory budgetCategory) {
+        this.budgetCategory = budgetCategory;
     }
 
     public Transaction getTransaction() {

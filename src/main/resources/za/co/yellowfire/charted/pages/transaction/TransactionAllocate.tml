@@ -3,37 +3,75 @@
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
       xmlns:p="tapestry:parameter">
     <body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="#">Allocations</a>
+            <ul class="nav"> </ul>
+        </div>
+    </div>
         <t:form t:id="allocateForm" >
             <t:errors/>
-            <div class="control-group">
-                <t:label for="transaction.id"/>
-                <input t:type="TextField" t:id="transaction.id" size="30" disabled="true"/>
-            </div>
-            <div class="control-group">
-                <t:label for="transaction.datePosted"/>
-                <input t:type="TextField" t:id="transaction.datePosted" size="30"/>
-            </div>
-            <div class="control-group">
-                <t:label for="transaction.amount"/>
-                <input t:type="TextField" t:id="transaction.amount" size="30"/>
-            </div>
-            <div class="control-group">
-                <t:label for="transaction.memo"/>
-                <input t:type="TextField" t:id="transaction.memo" size="30"/>
-            </div>
-            <t:grid source="allocations" row="allocation" model="allocationModel" pagerPosition="bottom" class="table table-hover table-bordered">
-                <p:empty>
-                    <p>There are no allocations.</p>
-                </p:empty>
-            </t:grid>
-            <button t:type="submit" value="Save" />
-            <a t:type="eventlink" t:event="cancel" href="#" style="margin-left: 5px;">Cancel</a>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Budget Category</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr t:type="AjaxFormLoop" t:source="allocations" t:value="holder">
+                    <t:submitnotifier>
+                        <td style="${hideIfRemoved}">${holder.object.id}</td>
+                        <td style="${hideIfRemoved}"><input t:type="Select" t:id="allocationCategory" t:value="holder.object.budgetCategory" t:validate="required" /></td>
+                        <td style="${hideIfRemoved}"><input t:type="TextField" t:id="allocationAmount" t:value="holder.object.amount" t:validate="required" /></td>
+                        <td style="${hideIfRemoved}"><t:removerowlink>remove</t:removerowlink></td>
+
+                        <!-- If optimistic locking is not needed then comment out this next bit.
+                        <t:hidden value="allocation.removed"/>
+                        <t:hidden value="personHolder.version"/>
+                        <t:hidden value="personHolder.person.version"/>
+                        -->
+                    </t:submitnotifier>
+                    <p:addRow>
+                        <td colspan="6" style="text-align: right">
+                            <t:addrowlink>Add a row</t:addrowlink>
+                        </td>
+                    </p:addRow>
+                </tr>
+                </tbody>
+            </table>
         </t:form>
     </body>
     <p:menu>
         <t:menu sections="menuSections" />
     </p:menu>
     <p:sidebar>
-
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Transaction Detail</a>
+                <ul class="nav"></ul>
+            </div>
+        </div>
+        <t:form t:id="transactionForm" >
+            <div class="control-group">
+                <t:label for="id"/>
+                <input t:type="TextField" t:id="txId" t:value="transaction.id" size="30" disabled="true"/>
+            </div>
+            <div class="control-group">
+                <t:label for="datePosted"/>
+                <input t:type="TextField" t:id="txDatePosted" t:value="transaction.datePosted" t:translate="date" size="30" disabled="true"/>
+            </div>
+            <div class="control-group">
+                <t:label for="amount"/>
+                <input t:type="TextField" t:id="txAmount" t:value="transaction.amount" size="30" disabled="true"/>
+            </div>
+            <div class="control-group">
+                <t:label for="memo"/>
+                <input t:type="TextField" t:id="txMemo" t:value="transaction.memo" size="30" disabled="true"/>
+            </div>
+        </t:form>
     </p:sidebar>
 </html>

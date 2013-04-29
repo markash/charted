@@ -15,13 +15,12 @@ import org.apache.tapestry5.services.*;
 import org.apache.tapestry5.services.compatibility.Compatibility;
 import org.apache.tapestry5.services.compatibility.Trait;
 import org.slf4j.Logger;
+import za.co.yellowfire.charted.domain.BudgetAllocation;
 import za.co.yellowfire.charted.domain.dao.*;
 import za.co.yellowfire.charted.domain.BudgetSection;
 import za.co.yellowfire.charted.domain.manager.OfxStatementImporter;
 import za.co.yellowfire.charted.domain.manager.StatementImporter;
-import za.co.yellowfire.charted.translator.BudgetSectionValueEncoder;
-import za.co.yellowfire.charted.translator.CashFlowDirectionTranslator;
-import za.co.yellowfire.charted.translator.ColorTranslator;
+import za.co.yellowfire.charted.translator.*;
 
 /**
  * This module is automatically included as part of the Tapestry IoC Registry, it's a good place to
@@ -80,16 +79,17 @@ public class AppModule {
 
     public static void contributeValueEncoderSource(MappedConfiguration<Class,Object> configuration) {
         configuration.addInstance(BudgetSection.class, BudgetSectionValueEncoder.class);
+        configuration.addInstance(BudgetAllocation.class, BudgetAllocationValueEncoder.class);
     }
 
     public static void contributeFactoryDefaults(
             MappedConfiguration<String, Object> configuration)
     {
-        // The application version number is incorprated into URLs for some
+        // The application version number is incorporated into URLs for some
         // assets. Web browsers will cache assets because of the far future expires
         // header. If existing assets are changed, the version number should also
-        // change, to force the browser to download new versions. This overrides Tapesty's default
-        // (a random hexadecimal number), but may be further overriden by DevelopmentModule or
+        // change, to force the browser to download new versions. This overrides Tapestry's default
+        // (a random hexadecimal number), but may be further overridden by DevelopmentModule or
         // QaModule.
         configuration.override(SymbolConstants.APPLICATION_VERSION, "0.1.0");
     }
@@ -112,6 +112,7 @@ public class AppModule {
             ThreadLocale threadLocale) {
         configuration.add("cash-flow-direction", new CashFlowDirectionTranslator());
         configuration.add("color", new ColorTranslator());
+        configuration.add("date", new DateTranslator());
     }
 
     /**
