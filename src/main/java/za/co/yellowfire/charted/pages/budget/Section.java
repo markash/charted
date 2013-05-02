@@ -8,6 +8,8 @@ import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import za.co.yellowfire.charted.domain.*;
 import za.co.yellowfire.charted.domain.dao.BudgetDao;
+import za.co.yellowfire.charted.domain.dao.BudgetSectionDao;
+import za.co.yellowfire.charted.pages.AbstractPage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,13 +18,16 @@ import java.util.List;
  * @author Mark P Ashworth
  * @version 0.1.0
  */
-public class Section {
+public class Section extends AbstractPage {
 
     @Persist
     private long budgetId;
 
     @Inject
     private BudgetDao budgetDao;
+
+    @Inject
+    private BudgetSectionDao sectionDao;
 
     @Inject
     private Messages messages;
@@ -49,21 +54,11 @@ public class Section {
     }
 
     public void onValidateFromSectionForm() {
-        System.out.println("onValidateFromSectionForm");
+        BudgetSection section = new BudgetSection(name, direction, color.name());
+        sectionDao.insert(budgetId, section);
     }
 
     public Object onSuccess() {
         return BudgetCurrent.class;
-    }
-
-    public List<MenuSection> getMenuSections() {
-        return Arrays.asList(
-                new MenuSection(
-                        "Budgeting",
-                        new MenuItem[]{
-                                new MenuItem("Current Budget", "budget/current"),
-                                new MenuItem("Statement Upload", "statement/upload"),
-                        })
-        );
     }
 }

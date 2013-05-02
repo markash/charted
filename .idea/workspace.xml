@@ -2,21 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df7453d-0526-4183-8b66-da8995fc5265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/AbstractPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/AjaxLoopHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/BudgetAllocationValueEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/DateTranslator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/DomainObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/DomainObjectDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/DomainObjectValueEncoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/services/AppModule.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/services/AppModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetAllocation.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetAllocation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationDao.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationMapper.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationQuery.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/support/SelectSupport.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_plastic_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry5_annotations_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_core_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_func_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_ioc_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_javadoc_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_jpa_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_json_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_test_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_upload_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry_yuicompressor_5_4_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_8.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Section.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Section.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.tml" afterPath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.tml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/TransactionDao.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/TransactionDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/charted.iml" afterPath="$PROJECT_DIR$/charted.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/charted_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/charted_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tapestry.iws" />
@@ -32,9 +39,9 @@
     <file path="/Contact.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363711721626" ignored="false" />
     <file path="/AddUser.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363678821606" ignored="false" />
     <file path="/AddUser.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363678951007" ignored="false" />
-    <file path="/fragment.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367267163279" ignored="false" />
+    <file path="/fragment.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367524625062" ignored="false" />
     <file path="/AddSection.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363684808506" ignored="false" />
-    <file path="/Dummy.txt" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367259268170" ignored="false" />
+    <file path="/Dummy.txt" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367527981558" ignored="false" />
     <file path="/AddSection.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363762327503" ignored="false" />
     <file path="/Text.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363686274174" ignored="false" />
     <file path="/AbstractBootstrapEditable.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363688943117" ignored="false" />
@@ -64,7 +71,7 @@
     <file path="/BudgetIndex.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363768154234" ignored="false" />
     <file path="/SectionList.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363762280658" ignored="false" />
     <file path="/BudgetCurrent.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366745157088" ignored="false" />
-    <file path="/BudgetCurrent.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366344695807" ignored="false" />
+    <file path="/BudgetCurrent.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367526865173" ignored="false" />
     <file path="/RowStyle.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363784824333" ignored="false" />
     <file path="/TransactionManager.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1364585945228" ignored="false" />
     <file path="/Statement.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1364585737744" ignored="false" />
@@ -89,7 +96,7 @@
     <file path="/BindBudgetAllocation.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365745853024" ignored="false" />
     <file path="/BaseJdbiTest.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365873382430" ignored="false" />
     <file path="/BudgetDatabaseTest.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365952172162" ignored="false" />
-    <file path="/0001_initial.sql" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366654843126" ignored="false" />
+    <file path="/0001_initial.sql" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367526231682" ignored="false" />
     <file path="/0000_drop.sql" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365880330429" ignored="false" />
     <file path="/BudgetQuery.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367128687338" ignored="false" />
     <file path="/BindBudget.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365881622969" ignored="false" />
@@ -98,17 +105,17 @@
     <file path="/BudgetDatabaseTest.xml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365925729956" ignored="false" />
     <file path="/unitils.properties" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365890339679" ignored="false" />
     <file path="/PostgreSQLSupport.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365889895216" ignored="false" />
-    <file path="/BudgetDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367128868152" ignored="false" />
+    <file path="/BudgetDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367526807246" ignored="false" />
     <file path="/Dao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367126228906" ignored="false" />
     <file path="/DaoSettings.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365920323810" ignored="false" />
     <file path="/BaseDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365920998030" ignored="false" />
     <file path="/ObjectiveQuery.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365921813411" ignored="false" />
     <file path="/ObjectiveMapper.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365921644484" ignored="false" />
-    <file path="/BudgetSectionQuery.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366430448460" ignored="false" />
+    <file path="/BudgetSectionQuery.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367525814225" ignored="false" />
     <file path="/BudgetSectionMapper.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365922816527" ignored="false" />
-    <file path="/BudgetCategoryQuery.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366662316140" ignored="false" />
+    <file path="/BudgetCategoryQuery.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367525878698" ignored="false" />
     <file path="/BudgetCategoryMapper.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366658766354" ignored="false" />
-    <file path="/BudgetCategoryDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366662424610" ignored="false" />
+    <file path="/BudgetCategoryDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367523399758" ignored="false" />
     <file path="/BindDate.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1365951719540" ignored="false" />
     <file path="/style.css" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366142459689" ignored="false" />
     <file path="/Menu.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366147974162" ignored="false" />
@@ -119,19 +126,19 @@
     <file path="/CashFlowDirectionTranslator.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366315539425" ignored="false" />
     <file path="/AbstractTranslator.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366315338546" ignored="false" />
     <file path="/ColorTranslator.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366659851080" ignored="false" />
-    <file path="/Category.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366659658888" ignored="false" />
+    <file path="/Category.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367525330468" ignored="false" />
     <file path="/.gitignore" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366319908543" ignored="false" />
-    <file path="/Section.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366344716300" ignored="false" />
+    <file path="/Section.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367525977863" ignored="false" />
     <file path="/Section.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366344620423" ignored="false" />
     <file path="/BindBudgetCategory.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366661930710" ignored="false" />
-    <file path="/BindBudgetSection.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366430348432" ignored="false" />
+    <file path="/BindBudgetSection.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367526091996" ignored="false" />
     <file path="/DateTimeArgument.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366431146672" ignored="false" />
     <file path="/LocalDateArgument.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366431291162" ignored="false" />
     <file path="/BudgetManager.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366659381567" ignored="false" />
-    <file path="/BudgetSectionDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366659344958" ignored="false" />
+    <file path="/BudgetSectionDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367525757533" ignored="false" />
     <file path="/DataException.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366655844079" ignored="false" />
-    <file path="/Category.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366833039962" ignored="false" />
-    <file path="/BudgetSectionValueEncoder.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366660670576" ignored="false" />
+    <file path="/Category.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367525001697" ignored="false" />
+    <file path="/BudgetSectionValueEncoder.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367525312818" ignored="false" />
     <file path="/BudgetNew.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366836610382" ignored="false" />
     <file path="/DatePicker.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366834985306" ignored="false" />
     <file path="/DatePicker.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1366746395701" ignored="false" />
@@ -151,8 +158,8 @@
     <file path="/TransactionList.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367201322582" ignored="false" />
     <file path="/TransactionDataSource.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367132777115" ignored="false" />
     <file path="/TransactionList.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367201023631" ignored="false" />
-    <file path="/TransactionAllocate.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367269674443" ignored="false" />
-    <file path="/TransactionAllocate.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367269461335" ignored="false" />
+    <file path="/TransactionAllocate.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367527621725" ignored="false" />
+    <file path="/TransactionAllocate.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367524152678" ignored="false" />
     <file path="/BudgetAllocationDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367267638269" ignored="false" />
     <file path="/AbstractPage.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367262068200" ignored="false" />
     <file path="/DateTranslator.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367264389789" ignored="false" />
@@ -161,6 +168,10 @@
     <file path="/DomainObjectValueEncoder.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367267612185" ignored="false" />
     <file path="/DomainObjectDao.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367267565034" ignored="false" />
     <file path="/AjaxLoopHolder.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367268433617" ignored="false" />
+    <file path="/BudgetCategoryValueEncoder.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367523316032" ignored="false" />
+    <file path="/BudgetCategorySupport.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367523541820" ignored="false" />
+    <file path="/SelectSupport.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367523118987" ignored="false" />
+    <file path="/BudgetSectionSupport.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367525263334" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,43 +191,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/../../unitils/unitils-dbunit/src/main/java/org/unitils/dbunit/DbUnitModule.java" line="227" class="org.unitils.dbunit.DbUnitModule" package="org.unitils.dbunit">
         <option name="ENABLED" value="true" />
@@ -264,6 +238,43 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -273,58 +284,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BudgetSectionValueEncoder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/BudgetSectionValueEncoder.java">
+      <file leaf-file-name="Section.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Section.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="322" selection-end="347" vertical-scroll-proportion="0.0">
+            <state line="29" column="40" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BudgetAllocationDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationDao.java">
+      <file leaf-file-name="BudgetSectionDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetSectionDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="112" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/TransactionDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="41" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BudgetAllocation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetAllocation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="53" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="22" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionAllocate.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0">
+            <state line="55" column="34" selection-start="2120" selection-end="2120" vertical-scroll-proportion="-7.296296">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#627#915#0" expanded="true" />
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#1019#1326#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
+                <element signature="e#1864#2165#0" expanded="true" />
+                <element signature="e#2154#2155#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BudgetSectionQuery.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetSectionQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="24" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BudgetSectionMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetSectionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0001_initial.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/0001_initial.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="29" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BudgetCurrent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetCurrent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="168" column="0" selection-start="5398" selection-end="5398" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -332,28 +349,35 @@
       <file leaf-file-name="TransactionAllocate.tml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.tml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="56" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.4921466">
+            <state line="11" column="43" selection-start="389" selection-end="389" vertical-scroll-proportion="1.0927153">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AjaxLoopHolder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/AjaxLoopHolder.java">
+      <file leaf-file-name="Layout.tml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/components/Layout.tml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="27" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
+            <state line="58" column="70" selection-start="2665" selection-end="2665" vertical-scroll-proportion="-36.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DomainObjectDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/DomainObjectDao.java">
+      <file leaf-file-name="BudgetDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="38" column="99" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BudgetQuery.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetQuery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="37" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -390,21 +414,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationMapper.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/AbstractPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/TransactionDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/DateTranslator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/BudgetAllocationValueEncoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationQuery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/services/AppModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/DomainObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetAllocation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/DomainObjectDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/AjaxLoopHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/DomainObjectValueEncoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget/Category.tml" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/support/BudgetSectionSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/BudgetSectionValueEncoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetSectionQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetSectionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetCategoryQuery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetCategoryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Section.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BindBudgetSection.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/0001_initial.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetCurrent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/components/Layout.tml" />
         <option value="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.tml" />
       </list>
     </option>
@@ -553,12 +577,17 @@
     <panes>
       <pane id="Scope" />
       <pane id="TapestryProjectView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="charted" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -919,6 +948,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -956,6 +1015,10 @@
               <option name="myItemId" value="charted" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -983,13 +1046,102 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="budget" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charted" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1029,11 +1181,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="za.co.yellowfire.charted.support" />
       <recent name="za.co.yellowfire.charted.translator" />
       <recent name="za.co.yellowfire.charted.domain.grid" />
       <recent name="za.co.yellowfire.charted.domain.dao" />
       <recent name="za.co.yellowfire.charted.domain" />
-      <recent name="za.co.yellowfire.charted.domain.jdbi" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/transaction" />
@@ -1042,17 +1194,17 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/css" />
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="za.co.yellowfire.charted.pages.budget" />
+      <recent name="za.co.yellowfire.charted.domain" />
+      <recent name="za.co.yellowfire.charted" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/budget" />
       <recent name="$PROJECT_DIR$/src/test/resources/za/co/yellowfire/charted/domain" />
       <recent name="$PROJECT_DIR$/src/test/java/za/co/yellowfire/charted/domain" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/domain" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="za.co.yellowfire.charted.pages.budget" />
-      <recent name="za.co.yellowfire.charted.domain" />
-      <recent name="za.co.yellowfire.charted" />
     </key>
   </component>
   <component name="RunManager" selected="Jetty Server.Jetty ">
@@ -1612,17 +1764,24 @@
       <created>1367205611028</created>
       <updated>1367205611028</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Working on transaction allocation.">
+      <created>1367269752579</created>
+      <updated>1367269752579</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Working on transaction allocation.">
+      <created>1367527990989</created>
+      <updated>1367527990989</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="875" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.630854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6671271" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46418732" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25576368" sideWeight="0.8480663" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34254143" sideWeight="0.65090907" order="3" side_tool="false" content_ui="tabs" />
@@ -1632,6 +1791,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6418733" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41574585" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1639,12 +1799,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13199426" sideWeight="0.59917355" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23140496" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29827088" sideWeight="0.36914602" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33069164" sideWeight="0.33287293" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37052342" sideWeight="0.494852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41574585" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46418732" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1690,7 +1850,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added transaction allocate page and associated dao methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on transaction allocation." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1714,6 +1874,7 @@
     <MESSAGE value="Added the transactions page." />
     <MESSAGE value="Amend README" />
     <MESSAGE value="Added transaction allocate page and associated dao methods" />
+    <MESSAGE value="Working on transaction allocation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1723,118 +1884,125 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationQuery.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetSection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="57" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0">
+        <state line="32" column="13" selection-start="889" selection-end="889" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/BudgetAllocationValueEncoder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetCategoryQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="33" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
+        <state line="48" column="14" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/services/AppModule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetCategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="3777" selection-end="3777" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/DomainObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="195" selection-end="195" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/TransactionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/DomainObjectDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+        <state line="44" column="45" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1762#2058#0" expanded="true" />
+            <element signature="e#2047#2048#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetAllocationDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Section.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="112" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+        <state line="29" column="40" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/BudgetSectionValueEncoder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetSectionDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="322" selection-end="347" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/components/BudgetSectionDropdown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="380" selection-end="380" vertical-scroll-proportion="0.23809524">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/DomainObjectValueEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="61" selection-start="670" selection-end="670" vertical-scroll-proportion="0.35714287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/BudgetAllocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="53" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tapestry/tapestry5-annotations/5.4-alpha-2/tapestry5-annotations-5.4-alpha-2.jar!/org/apache/tapestry5/ioc/annotations/Inject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="456" selection-end="456" vertical-scroll-proportion="0.25751072">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/translator/AjaxLoopHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="27" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0">
+        <state line="55" column="34" selection-start="2120" selection-end="2120" vertical-scroll-proportion="-7.296296">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#627#915#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#1019#1326#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1864#2165#0" expanded="true" />
+            <element signature="e#2154#2155#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BindBudgetSection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="82" selection-start="996" selection-end="996" vertical-scroll-proportion="0.3343239">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetSectionQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="24" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetSectionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/0001_initial.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="29" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BindStartDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="435" selection-end="435" vertical-scroll-proportion="0.15601783">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="37" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/Budget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="16" selection-start="4672" selection-end="4672" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/domain/dao/BudgetDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="99" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/BudgetCurrent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="0" selection-start="5398" selection-end="5398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/components/Layout.tml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="70" selection-start="2665" selection-end="2665" vertical-scroll-proportion="-36.25">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.tml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="56" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.4921466">
+        <state line="11" column="43" selection-start="389" selection-end="389" vertical-scroll-proportion="1.0927153">
           <folding />
         </state>
       </provider>

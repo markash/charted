@@ -8,28 +8,25 @@
           <element id="module-output" name="charted" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-core:5.4-alpha-2" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-core:5.4-alpha-3" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-ioc:5.4-alpha-3" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.2" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:plastic:5.4-alpha-3" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-func:5.4-alpha-3" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry5-annotations:5.4-alpha-3" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-json:5.4-alpha-3" />
           <element id="library" level="project" name="Maven: org.antlr:antlr-runtime:3.3" />
           <element id="library" level="project" name="Maven: org.antlr:stringtemplate:3.2.1" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.5" />
-          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-ioc:5.4-alpha-2" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
-          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
-          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.1" />
-          <element id="library" level="project" name="Maven: commons-io:commons-io:2.0.1" />
-          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry5-annotations:5.4-alpha-2" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" />
-          <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
-          <element id="library" level="project" name="Maven: org.apache.tapestry:plastic:5.4-alpha-2" />
-          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-func:5.4-alpha-2" />
-          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
-          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-json:5.4-alpha-2" />
-          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-jpa:5.4-alpha-2" />
+          <element id="library" level="project" name="Maven: org.rrd4j:rrd4j:2.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-jpa:5.4-alpha-3" />
           <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jpa_2.0_spec:1.1" />
-          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-upload:5.4-alpha-2" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-upload:5.4-alpha-3" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.0.1" />
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
-          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-yuicompressor:5.4-alpha-2" />
+          <element id="library" level="project" name="Maven: org.apache.tapestry:tapestry-yuicompressor:5.4-alpha-3" />
           <element id="library" level="project" name="Maven: com.yahoo.platform.yui:yuicompressor:2.4.6" />
           <element id="library" level="project" name="Maven: rhino:js:1.6R7" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:org.eclipse.persistence.jpa:2.4.1" />
@@ -40,10 +37,12 @@
           <element id="library" level="project" name="Maven: org.jdbi:jdbi:2.48" />
           <element id="library" level="project" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" />
           <element id="library" level="project" name="Maven: net.sf.ofx4j:ofx4j:1.6" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
           <element id="library" level="project" name="Maven: be.cyberelf.nanoxml:nanoxml:2.2.3" />
           <element id="library" level="project" name="Maven: net.sf.apt-jelly:apt-jelly-freemarker:2.4" />
           <element id="library" level="project" name="Maven: net.sf.apt-jelly:apt-jelly-core:2.4" />
           <element id="library" level="project" name="Maven: freemarker:freemarker:2.3.6" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.1" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.2" />
         </element>
       </element>

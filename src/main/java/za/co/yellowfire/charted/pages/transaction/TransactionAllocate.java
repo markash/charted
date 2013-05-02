@@ -1,22 +1,24 @@
 package za.co.yellowfire.charted.pages.transaction;
 
+import org.apache.tapestry5.EventConstants;
 import org.apache.tapestry5.EventContext;
 import org.apache.tapestry5.ValueEncoder;
-import org.apache.tapestry5.annotations.InjectPage;
-import org.apache.tapestry5.annotations.Persist;
-import org.apache.tapestry5.annotations.Property;
+import org.apache.tapestry5.annotations.*;
 import org.apache.tapestry5.beaneditor.BeanModel;
 import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.services.BeanModelSource;
 import org.apache.tapestry5.services.PageRenderLinkSource;
 import za.co.yellowfire.charted.domain.BudgetAllocation;
+import za.co.yellowfire.charted.domain.BudgetCategory;
 import za.co.yellowfire.charted.domain.DataException;
 import za.co.yellowfire.charted.domain.Transaction;
 import za.co.yellowfire.charted.domain.dao.BudgetAllocationDao;
 import za.co.yellowfire.charted.domain.dao.TransactionDao;
 import za.co.yellowfire.charted.pages.AbstractPage;
+import za.co.yellowfire.charted.support.BudgetCategorySupport;
 import za.co.yellowfire.charted.translator.AjaxLoopHolder;
+import za.co.yellowfire.charted.translator.BudgetCategoryValueEncoder;
 import za.co.yellowfire.charted.translator.DomainObjectValueEncoder;
 
 import java.math.BigDecimal;
@@ -49,6 +51,8 @@ public class TransactionAllocate extends AbstractPage {
     @Property
     private BeanModel<BudgetAllocation> allocationModel;
 
+    @Property
+    private BudgetCategorySupport budgetCategorySupport;
 
     @Property
     private AjaxLoopHolderEncoder allocationHolderEncoder;
@@ -91,12 +95,15 @@ public class TransactionAllocate extends AbstractPage {
         inFormSubmission = true;
     }
 
+    @OnEvent(EventConstants.ADD_ROW)
     public BudgetAllocation onAddRow() {
+        System.out.println("ON ADD ROW");
         return new BudgetAllocation(0 - System.nanoTime(), null, transaction, new BigDecimal("0.00"));
     }
 
+    @OnEvent(EventConstants.REMOVE_ROW)
     public BudgetAllocation onRemoveRow(BudgetAllocation allocation) {
-        System.out.println("allocation = " + allocation);
+        System.out.println("ON REMOVE ROW");
         return allocation;
     }
 

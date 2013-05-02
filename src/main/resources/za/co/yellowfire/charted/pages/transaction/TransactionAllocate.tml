@@ -9,7 +9,7 @@
             <ul class="nav"> </ul>
         </div>
     </div>
-        <t:form t:id="allocateForm" >
+        <t:form t:id="allocateForm" zone="^">
             <t:errors/>
 
             <table class="table">
@@ -25,7 +25,7 @@
                 <tr t:type="AjaxFormLoop" t:source="allocations" t:value="holder">
                     <t:submitnotifier>
                         <td style="${hideIfRemoved}">${holder.object.id}</td>
-                        <td style="${hideIfRemoved}"><input t:type="Select" t:id="allocationCategory" t:value="holder.object.budgetCategory" t:validate="required" /></td>
+                        <td style="${hideIfRemoved}"><input t:type="Select" t:id="allocationCategory" t:value="holder.object.budgetCategory" t:model="budgetCategorySupport.model" t:encoder="budgetCategorySupport.encoder" t:validate="required" /></td>
                         <td style="${hideIfRemoved}"><input t:type="TextField" t:id="allocationAmount" t:value="holder.object.amount" t:validate="required" /></td>
                         <td style="${hideIfRemoved}"><t:removerowlink>remove</t:removerowlink></td>
 
@@ -57,19 +57,19 @@
         </div>
         <t:form t:id="transactionForm" >
             <div class="control-group">
-                <t:label for="id"/>
+                <t:label for="txId"/>
                 <input t:type="TextField" t:id="txId" t:value="transaction.id" size="30" disabled="true"/>
             </div>
             <div class="control-group">
-                <t:label for="datePosted"/>
+                <t:label for="txDatePosted"/>
                 <input t:type="TextField" t:id="txDatePosted" t:value="transaction.datePosted" t:translate="date" size="30" disabled="true"/>
             </div>
             <div class="control-group">
-                <t:label for="amount"/>
+                <t:label for="txAmount"/>
                 <input t:type="TextField" t:id="txAmount" t:value="transaction.amount" size="30" disabled="true"/>
             </div>
             <div class="control-group">
-                <t:label for="memo"/>
+                <t:label for="txMemo"/>
                 <input t:type="TextField" t:id="txMemo" t:value="transaction.memo" size="30" disabled="true"/>
             </div>
         </t:form>
