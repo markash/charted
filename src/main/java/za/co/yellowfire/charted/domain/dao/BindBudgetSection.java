@@ -20,7 +20,7 @@ public @interface BindBudgetSection {
             public void bind(SQLStatement q, BindBudgetSection bind, BudgetSection section) {
                 q.bind(BudgetSectionQuery.name, section.getName());
                 q.bind(BudgetSectionQuery.color, section.getColor());
-                q.bind(BudgetSectionQuery.direction, section.getDirection());
+                q.bind(BudgetSectionQuery.direction, section.getDirection().name());
             }
           };
         }

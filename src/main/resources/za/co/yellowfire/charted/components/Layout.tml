@@ -57,11 +57,10 @@
                             </div>
                         </div><!--/span-->
                         <div class="span3" t:type="if" test="sidebar">
-                            <t:alerts/>
-                            <h2>${sidebarTitle}</h2>
                             <div class="sidebar-content">
                                 <t:delegate to="sidebar"/>
                             </div>
+                            <t:alerts/>
                         </div><!--/span-->
                     </div> <!--row-->
 

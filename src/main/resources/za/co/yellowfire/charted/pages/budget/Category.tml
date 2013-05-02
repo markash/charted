@@ -19,7 +19,7 @@
             </div>
             <div class="control-group">
                 <t:label for="section"/>
-                <t:select t:id="section" model="sections" validate="required"/>
+                <t:select t:id="section" model="budgetSectionSupport.model" encoder="budgetSectionSupport.encoder" validate="required"/>
             </div>
             <button t:type="submit" value="Save" />
             <a t:type="eventlink" t:event="cancel" href="#" style="margin-left: 5px;">Cancel</a>

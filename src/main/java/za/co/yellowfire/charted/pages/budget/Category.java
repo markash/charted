@@ -11,6 +11,8 @@ import za.co.yellowfire.charted.database.DataAccessException;
 import za.co.yellowfire.charted.domain.*;
 import za.co.yellowfire.charted.domain.dao.BudgetCategoryDao;
 import za.co.yellowfire.charted.domain.dao.BudgetSectionDao;
+import za.co.yellowfire.charted.pages.AbstractPage;
+import za.co.yellowfire.charted.support.BudgetSectionSupport;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +21,7 @@ import java.util.List;
  * @author Mark P Ashworth
  * @version 0.1.0
  */
-public class Category {
+public class Category extends AbstractPage {
     @Persist
     private long budgetId;
 
@@ -45,7 +47,7 @@ public class Category {
     private BudgetSection section;
 
     @Property
-    private List<BudgetSection> sections;
+    private BudgetSectionSupport budgetSectionSupport;
 
     @InjectComponent("name")
     private TextField nameField;
@@ -55,7 +57,7 @@ public class Category {
     }
 
     public void onActivate(EventContext eventContext) throws DataAccessException {
-        sections = sectionDao.findForBudgetId(budgetId);
+        budgetSectionSupport = new BudgetSectionSupport(budgetId, sectionDao);
     }
 
     public void onValidateFromCategoryForm() {
@@ -68,16 +70,5 @@ public class Category {
         categoryDao.save(category);
 
         return BudgetCurrent.class;
-    }
-
-    public List<MenuSection> getMenuSections() {
-        return Arrays.asList(
-                new MenuSection(
-                        "Budgeting",
-                        new MenuItem[]{
-                                new MenuItem("Current Budget", "budget/current"),
-                                new MenuItem("Statement Upload", "statement/upload"),
-                        })
-        );
     }
 }

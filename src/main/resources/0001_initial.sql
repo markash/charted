@@ -74,7 +74,7 @@ create table budget_category
   create_ts timestamp NULL default now(),
   update_ts timestamp NULL,
   constraint pk_budget_category PRIMARY KEY (category_id),
-  constraint uq_budget_category_name unique (name),
+  constraint uq_budget_category_name unique (section_id, name),
   constraint fk_budget_category_section foreign key (section_id) references budget_section(section_id) match full ON UPDATE NO ACTION ON DELETE NO ACTION
 ) without oids;
 

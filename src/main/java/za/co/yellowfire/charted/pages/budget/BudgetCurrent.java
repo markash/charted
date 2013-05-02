@@ -16,6 +16,7 @@ import za.co.yellowfire.charted.database.DataAccessException;
 import za.co.yellowfire.charted.domain.*;
 import za.co.yellowfire.charted.domain.dao.BudgetCategoryDao;
 import za.co.yellowfire.charted.domain.dao.BudgetDao;
+import za.co.yellowfire.charted.pages.AbstractPage;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -25,7 +26,7 @@ import java.util.*;
  * @version 0.1.0
  */
 @Import(library={"context:js/bootstrap.js"})
-public class BudgetCurrent {
+public class BudgetCurrent extends AbstractPage {
 
     @Inject
     private BudgetDao budgetDao;
@@ -164,17 +165,6 @@ public class BudgetCurrent {
     public Object onActionFromAddSection(long budgetId) {
         sectionPage.setBudgetId(budgetId);
         return sectionPage;
-    }
-
-    public List<MenuSection> getMenuSections() {
-        return Arrays.asList(
-                new MenuSection(
-                        "Budgeting",
-                        new MenuItem[]{
-                                new MenuItem("Current Budget", "budget/current"),
-                                new MenuItem("Statement Upload", "statement/upload"),
-                        })
-        );
     }
 
     private class BudgetCategoryEncoder implements ValueEncoder<BudgetCategory> {

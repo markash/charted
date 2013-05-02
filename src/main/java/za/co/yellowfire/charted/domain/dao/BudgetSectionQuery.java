@@ -23,11 +23,12 @@ public interface BudgetSectionQuery {
     String fields = budget_id + "," + section_id + "," + name + "," + color + "," + direction + "," + create_ts + "," + update_ts;
     String table = "budget_section";
 
-    @SqlUpdate("insert into " + table + "(" +
+    @SqlQuery("insert into " + table + "(" +
             budget_id + "," + name + "," + color + "," + direction +
             ") values (" +
-            ":" + budget_id + ",:" + name + ",:" + color + ",:" + direction + ")")
-    void insert(@Bind(budget_id) long budgetId, @BindBudgetSection BudgetSection budgetSection);
+            ":" + budget_id + ",:" + name + ",:" + color + ",:" + direction + ") returning " + fields)
+    @Mapper(BudgetSectionMapper.class)
+    BudgetSection insert(@Bind(budget_id) long budgetId, @BindBudgetSection BudgetSection budgetSection);
 
     @SqlQuery("select " + fields + " from " + table + " where " + section_id + " = :" + section_id)
     @Mapper(BudgetSectionMapper.class)

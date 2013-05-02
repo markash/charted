@@ -2,27 +2,28 @@ package za.co.yellowfire.charted.translator;
 
 import org.apache.tapestry5.ValueEncoder;
 import org.apache.tapestry5.ioc.annotations.Inject;
+import za.co.yellowfire.charted.domain.BudgetCategory;
 import za.co.yellowfire.charted.domain.BudgetSection;
+import za.co.yellowfire.charted.domain.dao.BudgetCategoryDao;
 import za.co.yellowfire.charted.domain.dao.BudgetSectionDao;
 
 /**
  * @author Mark P Ashworth
  * @version 0.1.0
  */
-public class BudgetSectionValueEncoder implements ValueEncoder<BudgetSection> {
+public class BudgetCategoryValueEncoder implements ValueEncoder<BudgetCategory> {
 
     @Inject
-    private BudgetSectionDao sectionDao;
+    private BudgetCategoryDao categoryDao;
 
-    public BudgetSectionValueEncoder() { }
+    public BudgetCategoryValueEncoder() { }
 
-    public BudgetSectionValueEncoder(BudgetSectionDao sectionDao) {
-        this.sectionDao = sectionDao;
+    public BudgetCategoryValueEncoder(BudgetCategoryDao categoryDao) {
+        this.categoryDao = categoryDao;
     }
 
-
     /**
-     * Converts a value into a client-side representation. The value should be parseable by {@link #toValue(String)}. In
+     * Converts a value into a client-side representation. The value should be parsable by {@link #toValue(String)}. In
      * some cases, what is returned is an identifier used to locate the true object, rather than a string representation
      * of the value itself.
      *
@@ -30,7 +31,7 @@ public class BudgetSectionValueEncoder implements ValueEncoder<BudgetSection> {
      * @return a string representation of the value, or the value's identity
      */
     @Override
-    public String toClient(BudgetSection value) {
+    public String toClient(BudgetCategory value) {
         return Long.toString(value.getId());
     }
 
@@ -41,7 +42,7 @@ public class BudgetSectionValueEncoder implements ValueEncoder<BudgetSection> {
      * @return the corresponding entity, or null if not found
      */
     @Override
-    public BudgetSection toValue(String clientValue) {
-        return sectionDao.findById(Long.parseLong(clientValue));
+    public BudgetCategory toValue(String clientValue) {
+        return categoryDao.findById(Long.parseLong(clientValue));
     }
 }

@@ -36,7 +36,7 @@ public class BudgetDao extends BaseDao<Budget> {
             public Budget withHandle(Handle handle) throws Exception {
                 BudgetQuery query = handle.attach(BudgetQuery.class);
                 List<Budget> results = query.findForDate(startDate);
-                return (results != null && results.size() > 0) ? results.get(0) : null;
+                return (results != null && results.size() > 0) ? buildBudget(results.get(0), handle) : null;
             }
         });
     }

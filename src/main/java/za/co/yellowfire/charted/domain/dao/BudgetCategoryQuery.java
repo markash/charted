@@ -25,14 +25,15 @@ public interface BudgetCategoryQuery {
     String fields = category_id + "," + section_id + "," + name + "," + color + "," + direction + "," + matches + "," + budget_amount + "," + create_ts + "," + update_ts;
     String table = "budget_category";
 
-    @SqlUpdate("insert into " + table + "(" +
+    @SqlQuery("insert into " + table + "(" +
             section_id + "," + name + "," + color + "," + direction + "," + matches + "," + budget_amount +
             ") values (" +
             ":" + section_id + ",:" + name + ",:" + color + ",:" + direction + ",:" + matches + ",:" + budget_amount + ")" +
-            " returning " + category_id)
-    Integer insert(@BindBudgetCategory BudgetCategory budgetCategory);
+            " returning " + fields)
+    @Mapper(BudgetCategoryMapper.class)
+    BudgetCategory insert(@BindBudgetCategory BudgetCategory budgetCategory);
 
-    @SqlUpdate("update " + table +
+    @SqlQuery("update " + table +
             "set " + section_id + " = :" + section_id + "," +
             name + " = :" + section_id + "," +
             color + " = :" + section_id + "," +
@@ -44,6 +45,10 @@ public interface BudgetCategoryQuery {
             " returning " + fields)
     @Mapper(BudgetCategoryMapper.class)
     BudgetCategory update(@BindBudgetCategory BudgetCategory budgetCategory);
+
+    @SqlQuery("select " + fields + " from " + table)
+    @Mapper(BudgetCategoryMapper.class)
+    List<BudgetCategory> findAll();
 
     @SqlQuery("select " + fields + " from " + table + " where " + category_id + " = :" + category_id)
     @Mapper(BudgetCategoryMapper.class)
