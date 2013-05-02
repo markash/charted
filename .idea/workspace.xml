@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df7453d-0526-4183-8b66-da8995fc5265" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/support/SelectSupport.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_plastic_5_4_alpha_2.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tapestry_tapestry5_annotations_5_4_alpha_2.xml" afterPath="" />
@@ -18,12 +17,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_8.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Section.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/budget/Section.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.java" afterPath="$PROJECT_DIR$/src/main/java/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.tml" afterPath="$PROJECT_DIR$/src/main/resources/za/co/yellowfire/charted/pages/transaction/TransactionAllocate.tml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/charted.iml" afterPath="$PROJECT_DIR$/charted.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/charted_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/charted_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tapestry.iws" />
@@ -41,7 +36,7 @@
     <file path="/AddUser.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363678951007" ignored="false" />
     <file path="/fragment.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367524625062" ignored="false" />
     <file path="/AddSection.tml" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363684808506" ignored="false" />
-    <file path="/Dummy.txt" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367527981558" ignored="false" />
+    <file path="/Dummy.txt" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1367528022733" ignored="false" />
     <file path="/AddSection.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363762327503" ignored="false" />
     <file path="/Text.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363686274174" ignored="false" />
     <file path="/AbstractBootstrapEditable.java" changelist="3df7453d-0526-4183-8b66-da8995fc5265" time="1363688943117" ignored="false" />
@@ -1772,7 +1767,11 @@
       <created>1367527990989</created>
       <updated>1367527990989</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Working on transaction allocation.">
+      <created>1367528025556</created>
+      <updated>1367528025556</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
